@@ -5,5 +5,5 @@ import com.google.gson.annotations.SerializedName
 data class Holiday(
 
     @field:SerializedName("Iran")
-    val iran: List<Any?>? = null
+    val iran: List<String>? = null
 )
