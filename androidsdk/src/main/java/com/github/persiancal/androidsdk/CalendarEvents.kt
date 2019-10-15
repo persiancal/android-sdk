@@ -75,10 +75,10 @@ class CalendarEvents {
         return jalaliEventsDbBox.count() != 0L
     }
 
-    fun getJalaliEvents(month: Int, day: Int): MutableList<JalaliEventsDb>? {
+    fun getJalaliEvents(dayOfMonth: Int, month: Int): MutableList<JalaliEventsDb>? {
         val query = jalaliEventsDbBox.query {
             equal(JalaliEventsDb_.month, month)
-            equal(JalaliEventsDb_.day, day)
+            equal(JalaliEventsDb_.day, dayOfMonth)
         }
         return query.find()
     }
