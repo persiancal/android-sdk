@@ -2,6 +2,7 @@ package com.github.persiancal.android
 
 import android.view.View
 import android.widget.TextView
+import com.google.android.material.button.MaterialButton
 import com.mikepenz.fastadapter.FastAdapter
 import com.mikepenz.fastadapter.items.AbstractItem
 
@@ -30,6 +31,7 @@ data class JalaliEventItem(
     class ViewHolder(view: View) : FastAdapter.ViewHolder<JalaliEventItem>(view) {
         var titleTextView: TextView = view.findViewById(R.id.titleTextView)
         var descriptionTextView: TextView = view.findViewById(R.id.descriptionTextView)
+        var sourceInfoButton: MaterialButton = view.findViewById(R.id.sourceInfoButton)
         override fun bindView(item: JalaliEventItem, payloads: MutableList<Any>) {
             titleTextView.text = item.title_fa_IR
             descriptionTextView.text = item.description_fa_IR

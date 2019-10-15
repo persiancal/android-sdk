@@ -1,9 +1,11 @@
 package com.github.persiancal.android
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.aminography.primecalendar.PrimeCalendar
 import com.aminography.primecalendar.common.CalendarType
 import com.aminography.primedatepicker.OnDayPickedListener
@@ -12,6 +14,7 @@ import com.aminography.primedatepicker.calendarview.PrimeCalendarView
 import com.github.persiancal.androidsdk.CalendarEvents
 import com.mikepenz.fastadapter.FastAdapter
 import com.mikepenz.fastadapter.adapters.ItemAdapter
+import com.mikepenz.fastadapter.listeners.ClickEventHook
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -72,6 +75,25 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
 
     private fun setupRecyclerView() {
         fastAdapter = FastAdapter.with(itemAdapter)
+        fastAdapter.addEventHook(object : ClickEventHook<JalaliEventItem>() {
+            override fun onBind(viewHolder: RecyclerView.ViewHolder): View? {
+                return if (viewHolder is JalaliEventItem.ViewHolder) {
+                    viewHolder.sourceInfoButton
+                } else {
+                    null
+                }
+            }
+
+            override fun onClick(
+                v: View,
+                position: Int,
+                fastAdapter: FastAdapter<JalaliEventItem>,
+                item: JalaliEventItem
+            ) {
+
+            }
+
+        })
         val layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         recyclerView.layoutManager = layoutManager
         recyclerView.itemAnimator = DefaultItemAnimator()
