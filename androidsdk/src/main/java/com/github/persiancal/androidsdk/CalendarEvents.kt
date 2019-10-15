@@ -8,11 +8,16 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
 class CalendarEvents {
+    init {
+        instance = this
+    }
 
     companion object {
+        private var instance: CalendarEvents? = null
         private lateinit var apiService: ApiService
 
         fun init(context: Context) {
+
             apiService = ApiClient.getClient()!!.create(ApiService::class.java)
             val subscribe = apiService.getJalaliEvents("jalali.json")
                 .subscribeOn(Schedulers.io())
@@ -26,6 +31,10 @@ class CalendarEvents {
 
         private fun handleError(error: Throwable) {
             error.printStackTrace()
+        }
+
+        fun getInstance(): CalendarEvents {
+            return instance!!
         }
     }
 }
