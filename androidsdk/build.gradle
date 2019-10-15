@@ -2,6 +2,18 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+buildscript {
+    ext.objectboxVersion = '2.4.0'
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "io.objectbox:objectbox-gradle-plugin:$objectboxVersion"
+    }
+}
+apply plugin: 'kotlin-kapt' // Required for annotation processing.
+apply plugin: 'io.objectbox' // Apply last.
+
 def versionMajor = 0
 def versionMinor = 0
 def versionPatch = 1
