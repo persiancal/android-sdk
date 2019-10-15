@@ -1,8 +1,11 @@
 package com.github.persiancal.android
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -90,7 +93,16 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
                 fastAdapter: FastAdapter<JalaliEventItem>,
                 item: JalaliEventItem
             ) {
-
+                val builder = CustomTabsIntent.Builder()
+                val customTabsIntent = builder.build()
+                if (!item.sources.isNullOrEmpty())
+                    customTabsIntent.launchUrl(this@MainActivity, Uri.parse(item.sources[0]))
+                else
+                    Toast.makeText(
+                        this@MainActivity,
+                        "Source url not set",
+                        Toast.LENGTH_LONG
+                    ).show()
             }
 
         })
