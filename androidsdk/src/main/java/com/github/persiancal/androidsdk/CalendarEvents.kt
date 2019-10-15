@@ -1,6 +1,7 @@
 package com.github.persiancal.androidsdk
 
 import android.content.Context
+import android.util.Log
 import com.github.persiancal.androidsdk.model.jalali.JalaliEventsDb
 import com.github.persiancal.androidsdk.model.jalali.JalaliEventsDb_
 import com.github.persiancal.androidsdk.model.jalali.JalaliResponse
@@ -9,10 +10,12 @@ import com.github.persiancal.androidsdk.service.ApiService
 import com.github.persiancal.androidsdk.util.ApiClient
 import io.objectbox.Box
 import io.objectbox.BoxStore
+import io.objectbox.android.AndroidObjectBrowser
 import io.objectbox.kotlin.equal
 import io.objectbox.kotlin.query
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+
 
 class CalendarEvents {
 
@@ -26,6 +29,10 @@ class CalendarEvents {
             boxStore = MyObjectBox.builder()
                 .androidContext(context.applicationContext)
                 .build()
+            if (BuildConfig.DEBUG) {
+                val started = AndroidObjectBrowser(boxStore).start(context)
+                Log.i("ObjectBrowser", "Started: $started")
+            }
             jalaliEventsDbBox = boxStore.boxFor(
                 JalaliEventsDb::class.java
             )
