@@ -7,14 +7,14 @@
     android:layout_margin="8dp"
     app:cardBackgroundColor="@android:color/white"
     app:cardCornerRadius="6dp"
-    app:cardElevation="6dp">
+    app:cardElevation="2dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/white"
         android:orientation="vertical"
-        android:padding="5dp">
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/titleTextView"
@@ -29,12 +29,12 @@
             android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/moreInfoButton"
+            android:id="@+id/sourceInfoButton"
             style="@style/TextAppearance.MaterialComponents.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/white"
-            android:text="Source"
+            android:text="Source Info"
             android:textAllCaps="false" />
 
     </LinearLayout>
