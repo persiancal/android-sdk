@@ -14,7 +14,7 @@ import com.aminography.primecalendar.common.CalendarType
 import com.aminography.primedatepicker.OnDayPickedListener
 import com.aminography.primedatepicker.PickType
 import com.aminography.primedatepicker.calendarview.PrimeCalendarView
-import com.github.persiancal.androidsdk.CalendarEvents
+import com.github.persiancal.sdkremote.RemoteCalendarEvents
 import com.mikepenz.fastadapter.FastAdapter
 import com.mikepenz.fastadapter.adapters.ItemAdapter
 import com.mikepenz.fastadapter.listeners.ClickEventHook
@@ -33,8 +33,8 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
             val dayOnMonth = singleDay!!.dayOfMonth
             val month = singleDay.month + 1
             itemAdapter.clear()
-            if (calendarEvents.isReady()) run {
-                val jalaliEvents = calendarEvents.getJalaliEvents(dayOnMonth, month)
+            if (remoteCalendarEvents.isReady()) run {
+                val jalaliEvents = remoteCalendarEvents.getJalaliEvents(dayOnMonth, month)
                 for (item in jalaliEvents!!) {
                     val jalaliEventItem = JalaliEventItem(
                         item.key,
@@ -53,14 +53,14 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
         }
     }
 
-    lateinit var calendarEvents: CalendarEvents
+    lateinit var remoteCalendarEvents: RemoteCalendarEvents
     private val itemAdapter = ItemAdapter<JalaliEventItem>()
     private lateinit var fastAdapter: FastAdapter<JalaliEventItem>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        calendarEvents = CalendarEvents.getInstance()
+        remoteCalendarEvents = RemoteCalendarEvents.getInstance()
         setupCalendarView()
         setupRecyclerView()
 

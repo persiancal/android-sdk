@@ -1,2 +1,2 @@
-include ':app', ':androidsdk'
+include ':app', ':sdk-remote'
 rootProject.name='PersianCalSDK'
