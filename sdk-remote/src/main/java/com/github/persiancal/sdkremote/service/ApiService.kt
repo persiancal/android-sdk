@@ -1,6 +1,6 @@
 package com.github.persiancal.sdkremote.service
 
-import com.github.persiancal.sdkremote.model.jalali.JalaliResponse
+import com.github.persiancal.sdkremote.model.base.JalaliResponse
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Path
