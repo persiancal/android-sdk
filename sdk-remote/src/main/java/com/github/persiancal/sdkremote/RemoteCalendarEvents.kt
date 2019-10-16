@@ -25,6 +25,7 @@ class RemoteCalendarEvents {
         private lateinit var apiService: ApiService
         private lateinit var remoteJalaliEventsDbBox: Box<RemoteJalaliEventsDb>
         private lateinit var remoteHijriEventsDbBox: Box<RemoteHijriEventsDb>
+        private lateinit var remoteGregorianEventsDbBox: Box<RemoteGregorianEventsDb>
         private lateinit var selectedCalendarType: CalendarType
 
         fun init(
@@ -44,6 +45,9 @@ class RemoteCalendarEvents {
             )
             remoteHijriEventsDbBox = boxStore.boxFor(
                 RemoteHijriEventsDb::class.java
+            )
+            remoteGregorianEventsDbBox = boxStore.boxFor(
+                RemoteGregorianEventsDb::class.java
             )
             when (calendarType) {
                 CalendarType.JALALI -> {
@@ -128,7 +132,25 @@ class RemoteCalendarEvents {
         }
 
         private fun storeGregorianEvents(events: List<EventsItem?>?) {
-
+            for (item in events!!) {
+                var holidayIran = listOf<String>()
+                if (item!!.holiday != null) {
+                    holidayIran = item.holiday!!.iran!!
+                }
+                val gregorianDb = RemoteGregorianEventsDb(
+                    0,
+                    item.key!!.toLong(),
+                    item.calendar,
+                    item.month,
+                    item.sources,
+                    item.year,
+                    item.description!!.faIR,
+                    item.title!!.faIR,
+                    item.day,
+                    holidayIran
+                )
+                remoteGregorianEventsDbBox.put(gregorianDb)
+            }
         }
 
         private fun handleError(error: Throwable) {
@@ -150,7 +172,7 @@ class RemoteCalendarEvents {
     }
 
     fun isGregorianReady(): Boolean {
-        return false
+        return remoteGregorianEventsDbBox.count() != 0L
     }
 
     fun getJalaliEvents(dayOfMonth: Int, month: Int): MutableList<RemoteJalaliEventsDb>? {
@@ -165,6 +187,14 @@ class RemoteCalendarEvents {
         val query = remoteHijriEventsDbBox.query {
             equal(RemoteHijriEventsDb_.month, month)
             equal(RemoteHijriEventsDb_.day, dayOfMonth)
+        }
+        return query.find()
+    }
+
+    fun getGregorianEvents(dayOfMonth: Int, month: Int): MutableList<RemoteGregorianEventsDb>? {
+        val query = remoteGregorianEventsDbBox.query {
+            equal(RemoteGregorianEventsDb_.month, month)
+            equal(RemoteGregorianEventsDb_.day, dayOfMonth)
         }
         return query.find()
     }
