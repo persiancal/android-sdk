@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
             val dayOnMonth = singleDay!!.dayOfMonth
             val month = singleDay.month + 1
             itemAdapter.clear()
-            if (remoteCalendarEvents.isReady()) run {
+            if (remoteCalendarEvents.isJalaliReady()) run {
                 val jalaliEvents = remoteCalendarEvents.getJalaliEvents(dayOnMonth, month)
                 for (item in jalaliEvents!!) {
                     val jalaliEventItem = JalaliEventItem(
