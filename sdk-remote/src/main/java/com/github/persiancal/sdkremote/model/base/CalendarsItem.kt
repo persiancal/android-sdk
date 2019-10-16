@@ -1,8 +1,8 @@
-package com.github.persiancal.sdkremote.model.jalali
+package com.github.persiancal.sdkremote.model.base
 
 import com.google.gson.annotations.SerializedName
 
-data class NameItem(
+data class CalendarsItem(
 
     @field:SerializedName("en_US")
     val enUS: String? = null,

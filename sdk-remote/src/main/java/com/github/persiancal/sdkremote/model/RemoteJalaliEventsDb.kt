@@ -1,4 +1,4 @@
-package com.github.persiancal.sdkremote.model.jalali
+package com.github.persiancal.sdkremote.model
 
 import com.github.persiancal.sdkremote.util.StringListConverter
 import io.objectbox.annotation.Convert
