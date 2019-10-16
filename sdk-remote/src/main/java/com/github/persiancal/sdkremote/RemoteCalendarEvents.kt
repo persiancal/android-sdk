@@ -2,9 +2,9 @@ package com.github.persiancal.sdkremote
 
 import android.content.Context
 import android.util.Log
+import com.github.persiancal.sdkremote.model.RemoteJalaliEventsDb
 import com.github.persiancal.sdkremote.model.base.JalaliResponse
 import com.github.persiancal.sdkremote.model.jalali.MyObjectBox
-import com.github.persiancal.sdkremote.model.jalali.RemoteJalaliEventsDb
 import com.github.persiancal.sdkremote.model.jalali.RemoteJalaliEventsDb_
 import com.github.persiancal.sdkremote.service.ApiService
 import com.github.persiancal.sdkremote.util.ApiClient
