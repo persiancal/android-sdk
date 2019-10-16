@@ -5,7 +5,7 @@ import android.util.Log
 import com.github.persiancal.sdkremote.model.MyObjectBox
 import com.github.persiancal.sdkremote.model.RemoteJalaliEventsDb
 import com.github.persiancal.sdkremote.model.RemoteJalaliEventsDb_
-import com.github.persiancal.sdkremote.model.base.JalaliResponse
+import com.github.persiancal.sdkremote.model.base.EventsResponse
 import com.github.persiancal.sdkremote.service.ApiService
 import com.github.persiancal.sdkremote.util.ApiClient
 import com.github.persiancal.sdkremote.util.Constants
@@ -54,8 +54,8 @@ class RemoteCalendarEvents {
             }
         }
 
-        private fun handleResponse(jalaliResponse: JalaliResponse) {
-            val events = jalaliResponse.events
+        private fun handleResponse(eventsResponse: EventsResponse) {
+            val events = eventsResponse.events
             for (item in events!!) {
                 var holidayIran = listOf<String>()
                 if (item!!.holiday != null) {
