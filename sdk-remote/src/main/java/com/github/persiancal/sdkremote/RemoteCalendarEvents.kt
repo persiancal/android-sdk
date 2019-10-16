@@ -8,6 +8,7 @@ import com.github.persiancal.sdkremote.model.jalali.RemoteJalaliEventsDb
 import com.github.persiancal.sdkremote.model.jalali.RemoteJalaliEventsDb_
 import com.github.persiancal.sdkremote.service.ApiService
 import com.github.persiancal.sdkremote.util.ApiClient
+import com.github.persiancal.sdkremote.util.Constants
 import io.objectbox.Box
 import io.objectbox.BoxStore
 import io.objectbox.android.AndroidObjectBrowser
@@ -25,7 +26,10 @@ class RemoteCalendarEvents {
         private lateinit var apiService: ApiService
         private lateinit var remoteJalaliEventsDbBox: Box<RemoteJalaliEventsDb>
 
-        fun init(context: Context) {
+        fun init(
+            context: Context,
+            calendarType: CalendarType
+        ) {
             boxStore = MyObjectBox.builder()
                 .androidContext(context.applicationContext)
                 .build()
@@ -36,9 +40,14 @@ class RemoteCalendarEvents {
             remoteJalaliEventsDbBox = boxStore.boxFor(
                 RemoteJalaliEventsDb::class.java
             )
+            val endpoint = when (calendarType) {
+                CalendarType.JALALI -> Constants.JALALI_ENDPOINT
+                CalendarType.HIJRI -> Constants.HIJRI_ENDPOINT
+                CalendarType.GREGORIAN -> Constants.GREGORIAN_ENDPOINT
+            }
             if (!getInstance().isReady()) {
                 apiService = ApiClient.getClient()!!.create(ApiService::class.java)
-                val subscribe = apiService.getJalaliEvents("jalali.json")
+                val subscribe = apiService.getJalaliEvents(endpoint)
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe(this::handleResponse, this::handleError)
