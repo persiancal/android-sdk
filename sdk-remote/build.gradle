@@ -20,8 +20,8 @@ apply plugin: 'kotlin-kapt' // Required for annotation processing.
 apply plugin: 'io.objectbox' // Apply last.
 
 def versionMajor = 0
-def versionMinor = 0
-def versionPatch = 1
+def versionMinor = 1
+def versionPatch = 0
 
 android {
     compileSdkVersion 29
