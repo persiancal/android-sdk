@@ -26,13 +26,11 @@ class RemoteCalendarEvents {
         private lateinit var remoteJalaliEventsDbBox: Box<RemoteJalaliEventsDb>
         private lateinit var remoteHijriEventsDbBox: Box<RemoteHijriEventsDb>
         private lateinit var remoteGregorianEventsDbBox: Box<RemoteGregorianEventsDb>
-        private lateinit var selectedCalendarType: CalendarType
+        private var calendarTypeList = arrayListOf<CalendarType>()
 
         fun init(
-            context: Context,
-            calendarType: CalendarType
+            context: Context
         ) {
-            selectedCalendarType = calendarType
             boxStore = MyObjectBox.builder()
                 .androidContext(context.applicationContext)
                 .build()
@@ -49,38 +47,44 @@ class RemoteCalendarEvents {
             remoteGregorianEventsDbBox = boxStore.boxFor(
                 RemoteGregorianEventsDb::class.java
             )
-            when (calendarType) {
-                CalendarType.JALALI -> {
-                    if (!getInstance().isJalaliReady()) {
-                        requestEvents(Constants.JALALI_ENDPOINT)
+            for (item in calendarTypeList) {
+                when (item) {
+                    CalendarType.JALALI -> {
+                        if (!getInstance().isJalaliReady()) {
+                            requestEvents(item, Constants.JALALI_ENDPOINT)
+                        }
                     }
-                }
-                CalendarType.HIJRI -> {
-                    if (!getInstance().isHijriReady()) {
-                        requestEvents(Constants.HIJRI_ENDPOINT)
-                    }
+                    CalendarType.HIJRI -> {
+                        if (!getInstance().isHijriReady()) {
+                            requestEvents(item, Constants.HIJRI_ENDPOINT)
+                        }
 
-                }
-                CalendarType.GREGORIAN -> {
-                    if (!getInstance().isGregorianReady()) {
-                        requestEvents(Constants.GREGORIAN_ENDPOINT)
+                    }
+                    CalendarType.GREGORIAN -> {
+                        if (!getInstance().isGregorianReady()) {
+                            requestEvents(item, Constants.GREGORIAN_ENDPOINT)
+                        }
                     }
                 }
             }
-
         }
 
-        private fun requestEvents(endpoint: String) {
+        private fun requestEvents(calendarType: CalendarType, endpoint: String) {
             apiService = ApiClient.getClient()!!.create(ApiService::class.java)
             val subscribe = apiService.getJalaliEvents(endpoint)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(this::handleResponse, this::handleError)
+                .subscribe({
+                    handleResponse(it, calendarType)
+                }, this::handleError)
         }
 
-        private fun handleResponse(eventsResponse: EventsResponse) {
-            val events = eventsResponse.events
-            when (selectedCalendarType) {
+        private fun handleResponse(
+            response: EventsResponse,
+            calendarType: CalendarType
+        ) {
+            val events = response.events
+            when (calendarType) {
                 CalendarType.JALALI -> storeJalaliEvents(events)
                 CalendarType.HIJRI -> storeHijriEvents(events)
                 CalendarType.GREGORIAN -> storeGregorianEvents(events)
@@ -159,6 +163,11 @@ class RemoteCalendarEvents {
 
         fun getInstance(): RemoteCalendarEvents {
             return instance
+        }
+
+        fun addCalendar(calendarType: CalendarType): Companion {
+            calendarTypeList.add(calendarType)
+            return this
         }
 
     }

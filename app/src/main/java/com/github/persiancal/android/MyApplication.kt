@@ -9,6 +9,12 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        RemoteCalendarEvents.init(this, CalendarType.GREGORIAN)
+        RemoteCalendarEvents
+            .addCalendar(CalendarType.JALALI)
+            .addCalendar(CalendarType.HIJRI)
+            .addCalendar(CalendarType.GREGORIAN)
+            .init(this)
+
+
     }
 }
