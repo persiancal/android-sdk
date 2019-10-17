@@ -10,14 +10,18 @@ import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.aminography.primecalendar.PrimeCalendar
+import com.aminography.primecalendar.common.CalendarFactory
 import com.aminography.primecalendar.common.CalendarType
 import com.aminography.primedatepicker.OnDayPickedListener
 import com.aminography.primedatepicker.PickType
 import com.aminography.primedatepicker.calendarview.PrimeCalendarView
 import com.github.persiancal.sdkremote.RemoteCalendarEvents
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.mikepenz.fastadapter.FastAdapter
 import com.mikepenz.fastadapter.adapters.ItemAdapter
 import com.mikepenz.fastadapter.listeners.ClickEventHook
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.bottom_sheet_settings.*
 import kotlinx.android.synthetic.main.content_main.*
 import java.util.*
 
@@ -53,27 +57,65 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
         }
     }
 
+    private lateinit var calendarType: CalendarType
     lateinit var remoteCalendarEvents: RemoteCalendarEvents
     private val itemAdapter = ItemAdapter<JalaliEventItem>()
     private lateinit var fastAdapter: FastAdapter<JalaliEventItem>
+    private lateinit var bottomSheetSettingsBehavior: BottomSheetBehavior<View>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         remoteCalendarEvents = RemoteCalendarEvents.getInstance()
-        setupCalendarView()
+        setupBottomSheetSettings()
+        calendarView.calendarType = CalendarType.PERSIAN
+        calendarView.locale = Locale("fa")
+        calendarView.pickType = PickType.SINGLE
+        calendarView.flingOrientation = PrimeCalendarView.FlingOrientation.HORIZONTAL
+        calendarView.onDayPickedListener = this
+        handleBottomSheetEvents()
         setupRecyclerView()
 
     }
 
-    private fun setupCalendarView() {
-        // https://github.com/aminography/PrimeDatePicker
+    private fun handleBottomSheetEvents() {
+        gregorianRadioButton.setOnCheckedChangeListener { button, isChecked ->
+            if (button.isPressed && isChecked) {
+                calendarType = CalendarType.CIVIL
+                calendarView.locale = Locale("en")
+                calendarView.goto(CalendarFactory.newInstance(calendarType), false)
+                hideBottomSheetSettings()
+            }
+        }
+        jalaliRadioButton.setOnCheckedChangeListener { button, isChecked ->
+            if (button.isPressed && isChecked) {
+                calendarType = CalendarType.PERSIAN
+                calendarView.locale = Locale("fa")
+                calendarView.goto(CalendarFactory.newInstance(calendarType), false)
+                hideBottomSheetSettings()
+            }
+        }
+        hijriRadioButton.setOnCheckedChangeListener { button, isChecked ->
+            if (button.isPressed && isChecked) {
+                calendarType = CalendarType.HIJRI
+                calendarView.locale = Locale("ar")
+                calendarView.goto(CalendarFactory.newInstance(calendarType), false)
+                hideBottomSheetSettings()
+            }
+        }
+    }
 
-        calendarView.calendarType = CalendarType.PERSIAN
-        calendarView.pickType = PickType.SINGLE
-        calendarView.flingOrientation = PrimeCalendarView.FlingOrientation.HORIZONTAL
-        calendarView.locale = Locale("fa")
-        calendarView.onDayPickedListener = this
+    private fun setupBottomSheetSettings() {
+        settingsButton.setOnClickListener {
+            bottomSheetSettingsBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+        }
+        val settingsBottomSheet = coordinatorLayout.findViewById(R.id.bottom_sheet_settings) as View
+        bottomSheetSettingsBehavior = BottomSheetBehavior.from(settingsBottomSheet)
+        bottomSheetSettingsBehavior.state = BottomSheetBehavior.STATE_HIDDEN
+    }
+
+    private fun hideBottomSheetSettings() {
+        bottomSheetSettingsBehavior.state = BottomSheetBehavior.STATE_HIDDEN
     }
 
     private fun setupRecyclerView() {
