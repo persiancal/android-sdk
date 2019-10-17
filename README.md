@@ -1,5 +1,6 @@
 # Android SDK for PersianCal
 [![Build Status](https://travis-ci.org/persiancal/android-sdk.svg?branch=master)](https://travis-ci.org/persiancal/android-sdk)
+[![](https://jitpack.io/v/persiancal/android-sdk.svg)](https://jitpack.io/#persiancal/android-sdk)
 
 **Requirements**
 - Android Studio 3.5.1
