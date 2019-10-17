@@ -14,7 +14,5 @@ class MyApplication : Application() {
             .addCalendar(CalendarType.HIJRI)
             .addCalendar(CalendarType.GREGORIAN)
             .init(this)
-
-
     }
 }
