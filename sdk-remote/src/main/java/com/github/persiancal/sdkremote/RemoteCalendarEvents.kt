@@ -1,7 +1,6 @@
 package com.github.persiancal.sdkremote
 
 import android.content.Context
-import android.util.Log
 import com.github.persiancal.sdkremote.model.*
 import com.github.persiancal.sdkremote.model.base.EventsItem
 import com.github.persiancal.sdkremote.model.base.EventsResponse
@@ -10,7 +9,6 @@ import com.github.persiancal.sdkremote.util.ApiClient
 import com.github.persiancal.sdkremote.util.Constants
 import io.objectbox.Box
 import io.objectbox.BoxStore
-import io.objectbox.android.AndroidObjectBrowser
 import io.objectbox.kotlin.equal
 import io.objectbox.kotlin.query
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -34,10 +32,10 @@ class RemoteCalendarEvents {
             boxStore = MyObjectBox.builder()
                 .androidContext(context.applicationContext)
                 .build()
-            if (BuildConfig.DEBUG) {
-                val started = AndroidObjectBrowser(boxStore).start(context)
-                Log.i("ObjectBrowser", "Started: $started")
-            }
+//            if (BuildConfig.DEBUG) {
+//                val started = AndroidObjectBrowser(boxStore).start(context)
+//                Log.i("ObjectBrowser", "Started: $started")
+//            }
             remoteJalaliEventsDbBox = boxStore.boxFor(
                 RemoteJalaliEventsDb::class.java
             )

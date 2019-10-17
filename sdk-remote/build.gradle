@@ -11,10 +11,11 @@ buildscript {
         classpath "io.objectbox:objectbox-gradle-plugin:$objectboxVersion"
     }
 }
-dependencies {
-    debugImplementation "io.objectbox:objectbox-android-objectbrowser:$objectboxVersion"
-    releaseImplementation "io.objectbox:objectbox-android:$objectboxVersion"
-}
+
+//dependencies {
+//    debugImplementation "io.objectbox:objectbox-android-objectbrowser:$objectboxVersion"
+//    releaseImplementation "io.objectbox:objectbox-android:$objectboxVersion"
+//}
 
 apply plugin: 'kotlin-kapt' // Required for annotation processing.
 apply plugin: 'io.objectbox' // Apply last.
@@ -36,6 +37,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
+        ndk {
+            abiFilters "armeabi-v7a", "x86", "armeabi", "mips"
+        }
     }
 
     buildTypes {
