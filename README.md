@@ -15,3 +15,11 @@
 - [FastAdapter]: The bullet proof, fast and easy to use adapter library, which minimizes developing time to a fraction
 - Square [Retrofit] / [Okhttp] / [Logging-Interceptor]
 - [RxAndroid] Reactive Extensions for Android
+
+[Support libraries]: https://developer.android.com/jetpack/androidx/
+[Material Design 2]: https://material.io/develop/android/
+[FastAdapter]: https://github.com/mikepenz/FastAdapter
+[Retrofit]: https://github.com/square/retrofit
+[Okhttp]: https://github.com/square/okhttp
+[Logging-Interceptor]: https://github.com/square/okhttp/tree/master/okhttp-logging-interceptor
+[RxAndroid]: https://github.com/ReactiveX/RxAndroid
