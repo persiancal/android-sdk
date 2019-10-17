@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
             if (remoteCalendarEvents.isJalaliReady()) run {
                 val jalaliEvents = remoteCalendarEvents.getJalaliEvents(dayOnMonth, month)
                 for (item in jalaliEvents!!) {
-                    val jalaliEventItem = JalaliEventItem(
+                    val eventItem = EventItem(
                         item.key,
                         item.calendar,
                         item.month,
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
                         item.day,
                         item.holiday_Iran
                     )
-                    itemAdapter.add(jalaliEventItem)
+                    itemAdapter.add(eventItem)
                 }
             }
         }
@@ -59,8 +59,8 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
 
     private lateinit var calendarType: CalendarType
     lateinit var remoteCalendarEvents: RemoteCalendarEvents
-    private val itemAdapter = ItemAdapter<JalaliEventItem>()
-    private lateinit var fastAdapter: FastAdapter<JalaliEventItem>
+    private val itemAdapter = ItemAdapter<EventItem>()
+    private lateinit var fastAdapter: FastAdapter<EventItem>
     private lateinit var bottomSheetSettingsBehavior: BottomSheetBehavior<View>
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -120,9 +120,9 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
 
     private fun setupRecyclerView() {
         fastAdapter = FastAdapter.with(itemAdapter)
-        fastAdapter.addEventHook(object : ClickEventHook<JalaliEventItem>() {
+        fastAdapter.addEventHook(object : ClickEventHook<EventItem>() {
             override fun onBind(viewHolder: RecyclerView.ViewHolder): View? {
-                return if (viewHolder is JalaliEventItem.ViewHolder) {
+                return if (viewHolder is EventItem.ViewHolder) {
                     viewHolder.sourceInfoButton
                 } else {
                     null
@@ -132,8 +132,8 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
             override fun onClick(
                 v: View,
                 position: Int,
-                fastAdapter: FastAdapter<JalaliEventItem>,
-                item: JalaliEventItem
+                fastAdapter: FastAdapter<EventItem>,
+                item: EventItem
             ) {
                 val builder = CustomTabsIntent.Builder()
                 val customTabsIntent = builder.build()

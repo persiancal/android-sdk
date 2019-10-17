@@ -6,7 +6,7 @@ import com.google.android.material.button.MaterialButton
 import com.mikepenz.fastadapter.FastAdapter
 import com.mikepenz.fastadapter.items.AbstractItem
 
-data class JalaliEventItem(
+data class EventItem(
     val key: Long?,
     val calendar: List<String?>? = null,
     val month: Int? = null,
@@ -16,9 +16,9 @@ data class JalaliEventItem(
     val title_fa_IR: String? = null,
     val day: Int? = null,
     val holiday_Iran: List<String>? = null
-) : AbstractItem<JalaliEventItem.ViewHolder>() {
+) : AbstractItem<EventItem.ViewHolder>() {
     override val layoutRes: Int
-        get() = R.layout.jalali_event_item
+        get() = R.layout.event_item
 
     override val type: Int
         get() = R.id.fastadapter_item
@@ -28,16 +28,16 @@ data class JalaliEventItem(
         return ViewHolder(v)
     }
 
-    class ViewHolder(view: View) : FastAdapter.ViewHolder<JalaliEventItem>(view) {
+    class ViewHolder(view: View) : FastAdapter.ViewHolder<EventItem>(view) {
         var titleTextView: TextView = view.findViewById(R.id.titleTextView)
         var descriptionTextView: TextView = view.findViewById(R.id.descriptionTextView)
         var sourceInfoButton: MaterialButton = view.findViewById(R.id.sourceInfoButton)
-        override fun bindView(item: JalaliEventItem, payloads: MutableList<Any>) {
+        override fun bindView(item: EventItem, payloads: MutableList<Any>) {
             titleTextView.text = item.title_fa_IR
             descriptionTextView.text = item.description_fa_IR
         }
 
-        override fun unbindView(item: JalaliEventItem) {
+        override fun unbindView(item: EventItem) {
             titleTextView.text = null
             descriptionTextView.text = null
         }
