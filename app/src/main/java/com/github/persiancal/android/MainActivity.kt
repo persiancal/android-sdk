@@ -27,6 +27,7 @@ import java.util.*
 
 
 class MainActivity : AppCompatActivity(), OnDayPickedListener {
+
     override fun onDayPicked(
         pickType: PickType,
         singleDay: PrimeCalendar?,
@@ -37,27 +38,16 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
             val dayOnMonth = singleDay!!.dayOfMonth
             val month = singleDay.month + 1
             itemAdapter.clear()
-            if (remoteCalendarEvents.isJalaliReady()) run {
-                val jalaliEvents = remoteCalendarEvents.getJalaliEvents(dayOnMonth, month)
-                for (item in jalaliEvents!!) {
-                    val eventItem = EventItem(
-                        item.key,
-                        item.calendar,
-                        item.month,
-                        item.sources,
-                        item.year,
-                        item.description_fa_IR,
-                        item.title_fa_IR,
-                        item.day,
-                        item.holiday_Iran
-                    )
-                    itemAdapter.add(eventItem)
-                }
+            when (calendarType) {
+                CalendarType.PERSIAN -> retrieveJalaliEvents(dayOnMonth, month)
+                CalendarType.CIVIL -> retrieveGregorianEvents(dayOnMonth, month)
+                CalendarType.HIJRI -> retrieveHijriEvents(dayOnMonth, month)
+                else -> retrieveJalaliEvents(dayOnMonth, month)
             }
         }
     }
 
-    private lateinit var calendarType: CalendarType
+    private var calendarType: CalendarType = CalendarType.PERSIAN
     lateinit var remoteCalendarEvents: RemoteCalendarEvents
     private val itemAdapter = ItemAdapter<EventItem>()
     private lateinit var fastAdapter: FastAdapter<EventItem>
@@ -75,7 +65,6 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
         calendarView.onDayPickedListener = this
         handleBottomSheetEvents()
         setupRecyclerView()
-
     }
 
     private fun handleBottomSheetEvents() {
@@ -85,6 +74,7 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
                 calendarView.locale = Locale("en")
                 calendarView.goto(CalendarFactory.newInstance(calendarType), false)
                 hideBottomSheetSettings()
+                itemAdapter.clear()
             }
         }
         jalaliRadioButton.setOnCheckedChangeListener { button, isChecked ->
@@ -93,6 +83,7 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
                 calendarView.locale = Locale("fa")
                 calendarView.goto(CalendarFactory.newInstance(calendarType), false)
                 hideBottomSheetSettings()
+                itemAdapter.clear()
             }
         }
         hijriRadioButton.setOnCheckedChangeListener { button, isChecked ->
@@ -101,6 +92,7 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
                 calendarView.locale = Locale("ar")
                 calendarView.goto(CalendarFactory.newInstance(calendarType), false)
                 hideBottomSheetSettings()
+                itemAdapter.clear()
             }
         }
     }
@@ -152,5 +144,65 @@ class MainActivity : AppCompatActivity(), OnDayPickedListener {
         recyclerView.layoutManager = layoutManager
         recyclerView.itemAnimator = DefaultItemAnimator()
         recyclerView.adapter = fastAdapter
+    }
+
+    private fun retrieveHijriEvents(dayOnMonth: Int, month: Int) {
+        if (remoteCalendarEvents.isHijriReady()) run {
+            val hijriEvents = remoteCalendarEvents.getHijriEvents(dayOnMonth, month)
+            for (item in hijriEvents!!) {
+                val eventItem = EventItem(
+                    item.key,
+                    item.calendar,
+                    item.month,
+                    item.sources,
+                    item.year,
+                    item.description_fa_IR,
+                    item.title_fa_IR,
+                    item.day,
+                    item.holiday_Iran
+                )
+                itemAdapter.add(eventItem)
+            }
+        }
+    }
+
+    private fun retrieveGregorianEvents(dayOnMonth: Int, month: Int) {
+        if (remoteCalendarEvents.isGregorianReady()) run {
+            val gregorianEvents = remoteCalendarEvents.getGregorianEvents(dayOnMonth, month)
+            for (item in gregorianEvents!!) {
+                val eventItem = EventItem(
+                    item.key,
+                    item.calendar,
+                    item.month,
+                    item.sources,
+                    item.year,
+                    item.description_fa_IR,
+                    item.title_fa_IR,
+                    item.day,
+                    item.holiday_Iran
+                )
+                itemAdapter.add(eventItem)
+            }
+        }
+    }
+
+    private fun retrieveJalaliEvents(dayOnMonth: Int, month: Int) {
+        if (remoteCalendarEvents.isJalaliReady()) run {
+            val jalaliEvents = remoteCalendarEvents.getJalaliEvents(dayOnMonth, month)
+            for (item in jalaliEvents!!) {
+                val eventItem = EventItem(
+                    item.key,
+                    item.calendar,
+                    item.month,
+                    item.sources,
+                    item.year,
+                    item.description_fa_IR,
+                    item.title_fa_IR,
+                    item.day,
+                    item.holiday_Iran
+                )
+                itemAdapter.add(eventItem)
+            }
+        }
     }
 }
