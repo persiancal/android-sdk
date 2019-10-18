@@ -1,65 +1,67 @@
 package com.github.persiancal.sdkremote
 
 import android.content.Context
-import com.github.persiancal.sdkremote.model.*
-import com.github.persiancal.sdkremote.model.base.EventsItem
-import com.github.persiancal.sdkremote.model.base.EventsResponse
+import com.github.persiancal.core.DatabaseHandler
+import com.github.persiancal.core.db.RemoteGregorianEventsDb
+import com.github.persiancal.core.db.RemoteHijriEventsDb
+import com.github.persiancal.core.db.RemoteJalaliEventsDb
 import com.github.persiancal.sdkremote.service.ApiService
 import com.github.persiancal.sdkremote.util.ApiClient
 import com.github.persiancal.sdkremote.util.Constants
-import io.objectbox.Box
-import io.objectbox.BoxStore
-import io.objectbox.kotlin.equal
-import io.objectbox.kotlin.query
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
 
 class RemoteCalendarEvents {
+    fun isHijriReady(): Boolean {
+        return DatabaseHandler.getInstance().isRemoteHijriReady()
+    }
+
+    fun getHijriEvents(dayOnMonth: Int, month: Int): MutableList<RemoteHijriEventsDb>? {
+        return DatabaseHandler.getInstance().getRemoteHijriEvents(dayOnMonth, month)
+    }
+
+    fun isGregorianReady(): Boolean {
+        return DatabaseHandler.getInstance().isRemoteGregorianReady()
+    }
+
+    fun getGregorianEvents(dayOnMonth: Int, month: Int): MutableList<RemoteGregorianEventsDb>? {
+        return DatabaseHandler.getInstance().getRemoteGregorianEvents(dayOnMonth, month)
+    }
+
+    fun isJalaliReady(): Boolean {
+        return DatabaseHandler.getInstance().isRemoteJalaliReady()
+    }
+
+    fun getJalaliEvents(dayOnMonth: Int, month: Int): MutableList<RemoteJalaliEventsDb>? {
+        return DatabaseHandler.getInstance().getRemoteJalaliEvents(dayOnMonth, month)
+    }
 
     companion object {
         private var instance: RemoteCalendarEvents = RemoteCalendarEvents()
-        private lateinit var boxStore: BoxStore
         private lateinit var apiService: ApiService
-        private lateinit var remoteJalaliEventsDbBox: Box<RemoteJalaliEventsDb>
-        private lateinit var remoteHijriEventsDbBox: Box<RemoteHijriEventsDb>
-        private lateinit var remoteGregorianEventsDbBox: Box<RemoteGregorianEventsDb>
+
         private var calendarTypeList = arrayListOf<CalendarType>()
 
         fun init(
             context: Context
         ) {
-            boxStore = MyObjectBox.builder()
-                .androidContext(context.applicationContext)
-                .build()
-//            if (BuildConfig.DEBUG) {
-//                val started = AndroidObjectBrowser(boxStore).start(context)
-//                Log.i("ObjectBrowser", "Started: $started")
-//            }
-            remoteJalaliEventsDbBox = boxStore.boxFor(
-                RemoteJalaliEventsDb::class.java
-            )
-            remoteHijriEventsDbBox = boxStore.boxFor(
-                RemoteHijriEventsDb::class.java
-            )
-            remoteGregorianEventsDbBox = boxStore.boxFor(
-                RemoteGregorianEventsDb::class.java
-            )
+            DatabaseHandler.init(context)
             for (item in calendarTypeList) {
                 when (item) {
                     CalendarType.JALALI -> {
-                        if (!getInstance().isJalaliReady()) {
+                        if (!DatabaseHandler.getInstance().isRemoteJalaliReady()) {
                             requestEvents(item, Constants.JALALI_ENDPOINT)
                         }
                     }
                     CalendarType.HIJRI -> {
-                        if (!getInstance().isHijriReady()) {
+                        if (!DatabaseHandler.getInstance().isRemoteHijriReady()) {
                             requestEvents(item, Constants.HIJRI_ENDPOINT)
                         }
 
                     }
                     CalendarType.GREGORIAN -> {
-                        if (!getInstance().isGregorianReady()) {
+                        if (!DatabaseHandler.getInstance().isRemoteGregorianReady()) {
                             requestEvents(item, Constants.GREGORIAN_ENDPOINT)
                         }
                     }
@@ -78,7 +80,7 @@ class RemoteCalendarEvents {
         }
 
         private fun handleResponse(
-            response: EventsResponse,
+            response: com.github.persiancal.core.base.EventsResponse,
             calendarType: CalendarType
         ) {
             val events = response.events
@@ -89,7 +91,7 @@ class RemoteCalendarEvents {
             }
         }
 
-        private fun storeJalaliEvents(events: List<EventsItem?>?) {
+        private fun storeJalaliEvents(events: List<com.github.persiancal.core.base.EventsItem?>?) {
             for (item in events!!) {
                 var holidayIran = listOf<String>()
                 if (item!!.holiday != null) {
@@ -107,11 +109,11 @@ class RemoteCalendarEvents {
                     item.day,
                     holidayIran
                 )
-                remoteJalaliEventsDbBox.put(jalaliDb)
+                DatabaseHandler.getInstance().putRemoteJalaliEvents(jalaliDb)
             }
         }
 
-        private fun storeHijriEvents(events: List<EventsItem?>?) {
+        private fun storeHijriEvents(events: List<com.github.persiancal.core.base.EventsItem?>?) {
             for (item in events!!) {
                 var holidayIran = listOf<String>()
                 if (item!!.holiday != null) {
@@ -129,11 +131,11 @@ class RemoteCalendarEvents {
                     item.day,
                     holidayIran
                 )
-                remoteHijriEventsDbBox.put(hijriDb)
+                DatabaseHandler.getInstance().putRemoteHijriEvents(hijriDb)
             }
         }
 
-        private fun storeGregorianEvents(events: List<EventsItem?>?) {
+        private fun storeGregorianEvents(events: List<com.github.persiancal.core.base.EventsItem?>?) {
             for (item in events!!) {
                 var holidayIran = listOf<String>()
                 if (item!!.holiday != null) {
@@ -151,7 +153,7 @@ class RemoteCalendarEvents {
                     item.day,
                     holidayIran
                 )
-                remoteGregorianEventsDbBox.put(gregorianDb)
+                DatabaseHandler.getInstance().putRemoteGregorianEvents(gregorianDb)
             }
         }
 
@@ -167,42 +169,5 @@ class RemoteCalendarEvents {
             calendarTypeList.add(calendarType)
             return this
         }
-
-    }
-
-    fun isJalaliReady(): Boolean {
-        return remoteJalaliEventsDbBox.count() != 0L
-    }
-
-    fun isHijriReady(): Boolean {
-        return remoteHijriEventsDbBox.count() != 0L
-    }
-
-    fun isGregorianReady(): Boolean {
-        return remoteGregorianEventsDbBox.count() != 0L
-    }
-
-    fun getJalaliEvents(dayOfMonth: Int, month: Int): MutableList<RemoteJalaliEventsDb>? {
-        val query = remoteJalaliEventsDbBox.query {
-            equal(RemoteJalaliEventsDb_.month, month)
-            equal(RemoteJalaliEventsDb_.day, dayOfMonth)
-        }
-        return query.find()
-    }
-
-    fun getHijriEvents(dayOfMonth: Int, month: Int): MutableList<RemoteHijriEventsDb>? {
-        val query = remoteHijriEventsDbBox.query {
-            equal(RemoteHijriEventsDb_.month, month)
-            equal(RemoteHijriEventsDb_.day, dayOfMonth)
-        }
-        return query.find()
-    }
-
-    fun getGregorianEvents(dayOfMonth: Int, month: Int): MutableList<RemoteGregorianEventsDb>? {
-        val query = remoteGregorianEventsDbBox.query {
-            equal(RemoteGregorianEventsDb_.month, month)
-            equal(RemoteGregorianEventsDb_.day, dayOfMonth)
-        }
-        return query.find()
     }
 }

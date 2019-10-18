@@ -1,0 +1,396 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:5382906308636854861",
+      "lastPropertyId": "10:744753093068072123",
+      "name": "RemoteHijriEventsDb",
+      "properties": [
+        {
+          "id": "1:9019591351502514623",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4156173339285000894",
+          "name": "key",
+          "type": 6,
+          "flags": 2
+        },
+        {
+          "id": "3:3056038214972798888",
+          "name": "calendar",
+          "type": 9
+        },
+        {
+          "id": "4:6463494726882268136",
+          "name": "month",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "5:4642904487790808329",
+          "name": "sources",
+          "type": 9
+        },
+        {
+          "id": "6:5433294281415969217",
+          "name": "year",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "7:8948942935741999076",
+          "name": "description_fa_IR",
+          "type": 9
+        },
+        {
+          "id": "8:4697543859796819954",
+          "name": "title_fa_IR",
+          "type": 9
+        },
+        {
+          "id": "9:6966605025189323694",
+          "name": "day",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "10:744753093068072123",
+          "name": "holiday_Iran",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:4379767536450421101",
+      "lastPropertyId": "10:8056177469010721482",
+      "name": "RemoteGregorianEventsDb",
+      "properties": [
+        {
+          "id": "1:8676049086463207349",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8477545941227137736",
+          "name": "key",
+          "type": 6,
+          "flags": 2
+        },
+        {
+          "id": "3:5235666661164988865",
+          "name": "calendar",
+          "type": 9
+        },
+        {
+          "id": "4:4157409402760017503",
+          "name": "month",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "5:6954275035780158244",
+          "name": "sources",
+          "type": 9
+        },
+        {
+          "id": "6:6236064680494073828",
+          "name": "year",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "7:154093944073566516",
+          "name": "description_fa_IR",
+          "type": 9
+        },
+        {
+          "id": "8:5110382689268262864",
+          "name": "title_fa_IR",
+          "type": 9
+        },
+        {
+          "id": "9:5148620320565304964",
+          "name": "day",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "10:8056177469010721482",
+          "name": "holiday_Iran",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:1693793174499821078",
+      "lastPropertyId": "10:5736664815330328400",
+      "name": "RemoteJalaliEventsDb",
+      "properties": [
+        {
+          "id": "1:5958137578126025729",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8807550420363863127",
+          "name": "key",
+          "type": 6,
+          "flags": 2
+        },
+        {
+          "id": "3:3204845627441106385",
+          "name": "calendar",
+          "type": 9
+        },
+        {
+          "id": "4:6735453124297801151",
+          "name": "month",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "5:885305969946351621",
+          "name": "sources",
+          "type": 9
+        },
+        {
+          "id": "6:6783421887218767614",
+          "name": "year",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "7:7686805171507551357",
+          "name": "description_fa_IR",
+          "type": 9
+        },
+        {
+          "id": "8:756282974860047075",
+          "name": "title_fa_IR",
+          "type": 9
+        },
+        {
+          "id": "9:3699605693413009972",
+          "name": "day",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "10:5736664815330328400",
+          "name": "holiday_Iran",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:4272073758965359112",
+      "lastPropertyId": "10:1725251995418307172",
+      "name": "LocalGregorianEventsDb",
+      "properties": [
+        {
+          "id": "1:3596657074027805309",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2076848499315829877",
+          "name": "key",
+          "type": 6,
+          "flags": 2
+        },
+        {
+          "id": "3:6444502843070464224",
+          "name": "calendar",
+          "type": 9
+        },
+        {
+          "id": "4:7122919161164241420",
+          "name": "month",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "5:4977359763110708353",
+          "name": "sources",
+          "type": 9
+        },
+        {
+          "id": "6:5928814687947667108",
+          "name": "year",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "7:6187766890483530286",
+          "name": "description_fa_IR",
+          "type": 9
+        },
+        {
+          "id": "8:5527552487990214747",
+          "name": "title_fa_IR",
+          "type": 9
+        },
+        {
+          "id": "9:6568186781028924655",
+          "name": "day",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "10:1725251995418307172",
+          "name": "holiday_Iran",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:6474019035028787081",
+      "lastPropertyId": "10:7037443453497691723",
+      "name": "LocalJalaliEventsDb",
+      "properties": [
+        {
+          "id": "1:7716220167447629982",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8802805369541482939",
+          "name": "key",
+          "type": 6,
+          "flags": 2
+        },
+        {
+          "id": "3:2887974661369219524",
+          "name": "calendar",
+          "type": 9
+        },
+        {
+          "id": "4:3548486216347647281",
+          "name": "month",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "5:7536315054907357553",
+          "name": "sources",
+          "type": 9
+        },
+        {
+          "id": "6:4660804748135698180",
+          "name": "year",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "7:9084252372570359119",
+          "name": "description_fa_IR",
+          "type": 9
+        },
+        {
+          "id": "8:138513829649817806",
+          "name": "title_fa_IR",
+          "type": 9
+        },
+        {
+          "id": "9:847330996759082298",
+          "name": "day",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "10:7037443453497691723",
+          "name": "holiday_Iran",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "6:4545791202791874562",
+      "lastPropertyId": "10:5136336432032836473",
+      "name": "LocalHijriEventsDb",
+      "properties": [
+        {
+          "id": "1:5838748667649935914",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8583192058353853318",
+          "name": "key",
+          "type": 6,
+          "flags": 2
+        },
+        {
+          "id": "3:3596165991026897633",
+          "name": "calendar",
+          "type": 9
+        },
+        {
+          "id": "4:4576359915993386124",
+          "name": "month",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "5:6616089322449988068",
+          "name": "sources",
+          "type": 9
+        },
+        {
+          "id": "6:5587169771761990048",
+          "name": "year",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "7:8195247676221536425",
+          "name": "description_fa_IR",
+          "type": 9
+        },
+        {
+          "id": "8:9014843558712174902",
+          "name": "title_fa_IR",
+          "type": 9
+        },
+        {
+          "id": "9:5775926490235872571",
+          "name": "day",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "10:5136336432032836473",
+          "name": "holiday_Iran",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "6:4545791202791874562",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

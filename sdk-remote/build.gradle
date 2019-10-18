@@ -2,24 +2,6 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
-buildscript {
-    ext.objectboxVersion = '2.4.0'
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath "io.objectbox:objectbox-gradle-plugin:$objectboxVersion"
-    }
-}
-
-//dependencies {
-//    debugImplementation "io.objectbox:objectbox-android-objectbrowser:$objectboxVersion"
-//    releaseImplementation "io.objectbox:objectbox-android:$objectboxVersion"
-//}
-
-apply plugin: 'kotlin-kapt' // Required for annotation processing.
-apply plugin: 'io.objectbox' // Apply last.
-
 def versionMajor = 0
 def versionMinor = 1
 def versionPatch = 1
@@ -56,6 +38,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':core')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.1.0'
