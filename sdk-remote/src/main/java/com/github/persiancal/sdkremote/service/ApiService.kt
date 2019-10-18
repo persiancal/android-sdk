@@ -1,6 +1,6 @@
 package com.github.persiancal.sdkremote.service
 
-import com.github.persiancal.sdkremote.model.base.EventsResponse
+import com.github.persiancal.core.base.EventsResponse
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Path

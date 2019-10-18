@@ -1,0 +1,2037 @@
+{
+  "name": "gregorian",
+  "countries": [
+    "Iran"
+  ],
+  "calendars": [
+    {
+      "en_US": "International",
+      "fa_IR": "بین‌المللی"
+    },
+    {
+      "en_US": "Christian",
+      "fa_IR": "مسیحی"
+    },
+    {
+      "en_US": "Buddhist",
+      "fa_IR": "بودایی"
+    }
+  ],
+  "months": {
+    "normal": [
+      31,
+      28,
+      31,
+      30,
+      31,
+      30,
+      31,
+      31,
+      30,
+      31,
+      30,
+      31
+    ],
+    "leap": [
+      31,
+      29,
+      31,
+      30,
+      31,
+      30,
+      31,
+      31,
+      30,
+      31,
+      30,
+      31
+    ],
+    "name": [
+      {
+        "en_US": "January",
+        "fa_IR": "ژانویه"
+      },
+      {
+        "en_US": "Feburary",
+        "fa_IR": "فوریه"
+      },
+      {
+        "en_US": "March",
+        "fa_IR": "مارس"
+      },
+      {
+        "en_US": "April",
+        "fa_IR": "آوریل"
+      },
+      {
+        "en_US": "May",
+        "fa_IR": "مه"
+      },
+      {
+        "en_US": "June",
+        "fa_IR": "ژوئن"
+      },
+      {
+        "en_US": "July",
+        "fa_IR": "ژوئیه"
+      },
+      {
+        "en_US": "August",
+        "fa_IR": "اوت"
+      },
+      {
+        "en_US": "September",
+        "fa_IR": "سپتامبر"
+      },
+      {
+        "en_US": "October",
+        "fa_IR": "اکتبر"
+      },
+      {
+        "en_US": "November",
+        "fa_IR": "نوامبر"
+      },
+      {
+        "en_US": "December",
+        "fa_IR": "دسامبر"
+      }
+    ]
+  },
+  "events": [
+    {
+      "key": 4113473936,
+      "title": {
+        "en_US": "world cancer day",
+        "fa_IR": "روز جهانی سرطان"
+      },
+      "description": {
+        "en_US": "World Cancer Day is an international day marked on February 4 to raise awareness of cancer and to encourage its prevention, detection, and treatment.",
+        "fa_IR": "روز جهانی سرطان روز جهانی است که در تاریخ 4 فوریه برای افزایش آگاهی از سرطان و ترغیب به پیشگیری ، تشخیص و درمان آن مشخص شده است."
+      },
+      "year": 2000,
+      "month": 2,
+      "day": 4,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Cancer_Day"
+      ]
+    },
+    {
+      "key": 1661744617,
+      "title": {
+        "en_US": "International Day of Zero Tolerance for Female Genital Mutilation",
+        "fa_IR": "روز جهانی عدم هرگونه مدارا با مثله‌کردن جنسی زنان"
+      },
+      "description": {
+        "en_US": "International Day of Zero Tolerance for Female Genital Mutilation is a United Nations-sponsored annual awareness day that takes place on February 6 as part of the UN's efforts to eradicate female genital mutilation. It was first introduced in 2003.",
+        "fa_IR": "روز بین‌المللی عدم هرگونه مدارا با مثله‌کردن جنسی زنان یکی از روزهای آگاهی دهنده بین‌المللی مورد حمایت سازمان ملل است که برای ۶ فوریه هر سال انتخاب شده و به مبارزه با بریدن آلت تناسلی زنان (ختنه زنان) اختصاص دارد."
+      },
+      "year": 2003,
+      "month": 2,
+      "day": 6,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_عدم_هرگونه_مدارا_با_مثله‌کردن_جنسی_زنان",
+        "https://en.wikipedia.org/wiki/International_Day_of_Zero_Tolerance_for_Female_Genital_Mutilation"
+      ]
+    },
+    {
+      "key": 1450195335,
+      "title": {
+        "en_US": "World Pulses Day",
+        "fa_IR": "روز جهانی حبوبات"
+      },
+      "description": {
+        "en_US": "World Pulses Day is a day established by the Food and Agriculture Organization (FAO) of the United Nations to recognize the importance of pulses (dry beans, lentils, dry peas, chickpeas, lupins) as a global food.",
+        "fa_IR": "روز جهانی پالس روزی است که توسط سازمان غذا و کشاورزی (FAO) سازمان ملل متحد برای شناخت اهمیت حبوبات (لوبیا خشک ، عدس ، نخود خشک ، نخود ، لپین) به عنوان یک ماده غذایی جهانی تأسیس شده است."
+      },
+      "year": 2018,
+      "month": 2,
+      "day": 10,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Pulses_Day"
+      ]
+    },
+    {
+      "key": 1313785479,
+      "title": {
+        "en_US": "International Day of Women and Girls in Science",
+        "fa_IR": "روز جهانی زنان و دختران در علم"
+      },
+      "description": {
+        "en_US": "In order to achieve full and equal access to and participation in science for women and girls, and further achieve gender equality and the empowerment of women and girls, the United Nations General Assembly adopted resolution A/RES/70/212 declaring 11 February as the International Day of Women and Girls in Science.",
+        "fa_IR": "به منظور دستیابی کامل و مساوی به مشارکت و مشارکت در علم زنان و دختران و دستیابی بیشتر به برابری جنسیتی و توانمندسازی زنان و دختران ، مجمع عمومی سازمان ملل متحد قطعنامه A / RES / 70/212 را تصویب کرد که 11 فوریه را به عنوان روز جهانی زن و دختر در علم اعلام کرد."
+      },
+      "year": 2015,
+      "month": 2,
+      "day": 11,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://undocs.org/A/RES/70/212"
+      ]
+    },
+    {
+      "key": 3487125915,
+      "title": {
+        "en_US": "World Radio Day",
+        "fa_IR": "روز جهانی رادیو"
+      },
+      "description": {
+        "en_US": "Following a request from the Spanish Radio Academy on 20 September 2010, Spain proposed that the UNESCO Executive Board include an agenda item on the proclamation of a World Radio Day. UNESCO's Executive Board approved the agenda item in its provisional agenda for the proclamation of a \"World Radio Day\" on 29 September 2011.",
+        "fa_IR": "روز جهانی رادیو یک رویداد سالانه است که در ۱۳ فوریه، برگزار می‌شود. این روز توسط یونسکو نامگذاری شده است."
+      },
+      "year": 2012,
+      "month": 2,
+      "day": 13,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_رادیو",
+        "https://en.wikipedia.org/wiki/World_Radio_Day"
+      ]
+    },
+    {
+      "key": 4198683185,
+      "title": {
+        "en_US": "World Day of Social Justice",
+        "fa_IR": "روز جهانی عدالت اجتماعی"
+      },
+      "description": {
+        "en_US": "Social Equality Justice day is a day recognizing the need to promote efforts to tackle issues such as poverty, exclusion and unemployment. Many organizations, including the UN, American Library Association (ALA), and the International Labour Office, make statements on the importance of social justice for people.",
+        "fa_IR": "روز عدالت اجتماعی روزی است که نیاز به ترویج تلاش برای مقابله با موضوعاتی از جمله فقر ، محرومیت و بیکاری است. بسیاری از سازمانها از جمله سازمان ملل متحد ، انجمن كتابخانه های آمریكا (ALA) و دفتر بین المللی كار در مورد اهمیت عدالت اجتماعی برای مردم بیانیه می دهند."
+      },
+      "year": 2007,
+      "month": 2,
+      "day": 20,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Day_of_Social_Justice"
+      ]
+    },
+    {
+      "key": 398838343,
+      "title": {
+        "en_US": "International Mother Language Day",
+        "fa_IR": "روز جهانی زبان مادری"
+      },
+      "description": {
+        "en_US": "International Mother Language Day (IMLD) is a worldwide annual observance held on 21 February to promote awareness of linguistic and cultural diversity and promote multilingualism. First announced by UNESCO on 17 November 1999, it was formally recognized by the United Nations General Assembly in a resolution establishing 2008 as the International Year of Languages",
+        "fa_IR": "نامگذاری این روز در کنفرانس عمومی یونسکو در سال ۱۹۹۹ به منظور کمک به تنوع زبانی و فرهنگی انجام شده‌است. مجمع عمومی سازمان ملل متحد نیز به دلیل اهمیت زیاد آن، سال ۲۰۰۸ را سال جهانی زبان‌ها اعلام کرد."
+      },
+      "year": 2002,
+      "month": 2,
+      "day": 21,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_زبان_مادری",
+        "https://en.wikipedia.org/wiki/International_Mother_Language_Day"
+      ]
+    },
+    {
+      "key": 602656915,
+      "title": {
+        "en_US": "Zero Discrimination Day",
+        "fa_IR": "روز جهانی تبعیض"
+      },
+      "description": {
+        "en_US": "Zero Discrimination Day is an annual day celebrated by the UN and other international organisations. The day aims to promote equality before the law and in practice throughout all of the member countries of the UN.",
+        "fa_IR": "روز جهانی تبعیض یک روز جهانی سالانه است که توسط سازمان ملل و سایر سازمان‌های بین المللی جشن گرفته می‌شود. هدف این روز ترویج برابری در برابر قانون و در عمل در تمام کشورهای عضو سازمان ملل است."
+      },
+      "year": 2014,
+      "month": 3,
+      "day": 1,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Zero_Discrimination_Day"
+      ]
+    },
+    {
+      "key": 3385196868,
+      "title": {
+        "en_US": "World Wildlife Day",
+        "fa_IR": "روز جهانی حیات وحش"
+      },
+      "description": {
+        "en_US": "In its resolution, the General Assembly reaffirmed the intrinsic value of wildlife and its various contributions, including ecological, genetic, social, economic, scientific, educational, cultural, recreational and aesthetic, to sustainable development and human well-being.",
+        "fa_IR": "روز جهانی حیات وحش در ۳ مارس هر سال توسط تمام کشورهای عضو سازمان ملل متحد و در جهت افزایش آگاهی از وضعیت گیاهان و جانوران وحشی جشن گرفته می‌شود."
+      },
+      "year": 2013,
+      "month": 3,
+      "day": 3,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_حیات_وحش",
+        "https://en.wikipedia.org/wiki/World_Wildlife_Day"
+      ]
+    },
+    {
+      "key": 797258058,
+      "title": {
+        "en_US": "International Women's Day",
+        "fa_IR": "روز جهانی زنان"
+      },
+      "description": {
+        "en_US": "International Women's Day (IWD) is celebrated on the 8th of March every year. It is a focal point in the movement for woman's rights.",
+        "fa_IR": "روز جهانی زنان بزرگداشتی است که هر ساله در روز ۸ مارس برگزار می‌شود و نقطه کانونی در جنبش حقوق زنان است. بسته به مناطق مختلف، تمرکزِ جشن بر بزرگداشت و دفاع از حقوق زنان و برگزاری جشنی برای دستاوردهای اقتصادی، سیاسی و اجتماعی زنان است."
+      },
+      "year": 1975,
+      "month": 3,
+      "day": 8,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_زن",
+        "https://en.wikipedia.org/wiki/International_Women's_Day"
+      ]
+    },
+    {
+      "key": 2754327934,
+      "title": {
+        "en_US": "International Day of Happiness",
+        "fa_IR": "روز جهانی خوشبختی"
+      },
+      "description": {
+        "en_US": "The International Day of Happiness is celebrated worldwide every 20 March, and was conceptualized and founded by philanthropist, activist, statesman, and prominent United Nations special advisor Jayme Illien to inspire, mobilize, and advance the global happiness movement.",
+        "fa_IR": "روز جهانی خوشبختی بزرگداشتی است که هر ساله در روز ۲۰ مارس در سراسر جهان برگزار می‌شود و توسط خیرخواهان، فعالان و دولتمردان برجسته سازمان ملل متحد از جمله مشاور جیمی ایلین برای الهام بخشیدن، بسیج و پیشبرد جنبش شادی جهانی تاسیس شد."
+      },
+      "year": 2013,
+      "month": 3,
+      "day": 20,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_Happiness"
+      ]
+    },
+    {
+      "key": 987100504,
+      "title": {
+        "en_US": "International Day for the Elimination of Racial Discrimination",
+        "fa_IR": "روز مبارزه با تبعیض نژادی"
+      },
+      "description": {
+        "en_US": "The International Day for the Elimination of Racial Discrimination is observed annually on 21 March. On that day, in 1960, police opened fire and killed 69 people at a peaceful demonstration in Sharpeville, South Africa, against the apartheid pass laws.",
+        "fa_IR": "روز مبارزه با تبعیض نژادی بزرگداشتی است که هر ساله در روز ۲۱ مارس در سراسر جهان برگزار می‌شود. مجمع عمومی سازمان ملل متحد با اعلام این روز در سال ۱۹۶۶، از جامعه جهانی خواست كه تلاش‌های خود را برای از بین بردن همه‌ی تبعیض‌های نژادی انجام دهند."
+      },
+      "year": 1966,
+      "month": 3,
+      "day": 21,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_مبارزه_با_تبعیض_نژادی",
+        "https://en.wikipedia.org/wiki/International_Day_of_Happiness"
+      ]
+    },
+    {
+      "key": 3724002111,
+      "title": {
+        "en_US": "World Poetry Day",
+        "fa_IR": "روز جهانی شعر"
+      },
+      "description": {
+        "en_US": "World Poetry Day is celebrated on 21 March, and was declared by UNESCO (the United Nations Educational, Scientific and Cultural Organization) in 1999. Its purpose is to promote the reading, writing, publishing and teaching of poetry throughout the world and, as the original UNESCO declaration says, to \"give fresh recognition and impetus to national, regional and international poetry movements\".",
+        "fa_IR": "یونسکو در سی امین اجلاس کنفرانس عمومی خود که در سال ۱۹۹۹ برگزار شد، به اتفاق آرا، روز ۲۱ مارس برابر با نوروز باستانی هر سال را به عنوان روز جهانی شعر اعلام کرد و هرسال این روز را گرامی می‌دارد."
+      },
+      "year": 1999,
+      "month": 3,
+      "day": 21,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_شعر",
+        "https://en.wikipedia.org/wiki/World_Poetry_Day"
+      ]
+    },
+    {
+      "key": 2201246610,
+      "title": {
+        "en_US": "International Day of Happiness",
+        "fa_IR": "روز جهانی سندروم داون"
+      },
+      "description": {
+        "en_US": "(WDSD) is marked each year on March 21. The date for WDSD being the 21st day of the 3rd month, was selected to signify the uniqueness of the triplication (trisomy) of the 21st chromosome which causes Down syndrome.",
+        "fa_IR": "مجمع عمومی سازمان ملل متحد ۲۱ مارس را به عنوان روز جهانی سندروم داون اعلام کرد. و از تمامی کشورهای عضو سازمان ملل و غیر دولتی‌ها دعوت کرد که، روز جهانی سندروم داون را به شیوه‌ای مناسب رعایت کنند تا آگاهی عمومی در مورد سندرم داون را افزایش دهند."
+      },
+      "year": 2012,
+      "month": 3,
+      "day": 21,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Down_Syndrome_Day"
+      ]
+    },
+    {
+      "key": 4172499084,
+      "title": {
+        "en_US": "International Day of Forests",
+        "fa_IR": "روز جهانی جنگل‌ها"
+      },
+      "description": {
+        "en_US": "The International Day of Forests was established on the 21st day of March, by resolution of the United Nations General Assembly on November 28, 2012. Each year, various events celebrate and raise awareness of the importance of all types of forests, and trees outside forests, for the benefit of current and future generations.",
+        "fa_IR": "روز جهانی جنگل‌ها با تصویب مجمع عمومی سازمان ملل متحد در ۲۱ مارس تایید شد. هر ساله، رویدادهای مختلف جشن گرفته می‌شود و آگاهی از اهمیت انواع جنگل‌ها، و درختان خارج از جنگل‌ها، به نفع نسل‌های فعلی و آینده."
+      },
+      "year": 2012,
+      "month": 3,
+      "day": 21,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_Forests"
+      ]
+    },
+    {
+      "key": 2062949774,
+      "title": {
+        "en_US": "World Water Day",
+        "fa_IR": "روز جهانی آب"
+      },
+      "description": {
+        "en_US": "World Water Day is an annual UN observance day (always on 22 March) that highlights the importance of freshwater. The day is used to advocate for the sustainable management of freshwater resources.",
+        "fa_IR": "روز جهانی آب مصادف با ۲۲ مارس هر ساله از سوی سازمان ملل نام‌گذاری شده‌است. این روز را به عنوان روز ترویج و آگاه‌سازی مردم در مورد آب اختصاص دهند."
+      },
+      "year": 1993,
+      "month": 3,
+      "day": 22,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_آب",
+        "https://en.wikipedia.org/wiki/World_Water_Day"
+      ]
+    },
+    {
+      "key": 1511126496,
+      "title": {
+        "en_US": "World Meteorological Day",
+        "fa_IR": "روز جهانی هواشناسی"
+      },
+      "description": {
+        "en_US": "The date of the establishment of the World Meteorological Organization in 23 March 1950 has been named World Meteorological Day. This organization announces a slogan for World Meteorology Day every year, and this day is celebrated in all member countries. World Meteorological Day is celebrated every year on 23 March to commemorate the entry into force in 1950 of the convention that created the World Meteorological Organization.",
+        "fa_IR": "روز جهانی هواشناسی هر ساله در ۲۳ مارس به مناسبت بزرگداشت ورود سازمان جهانی هواشناسی جشن گرفته می‌شود."
+      },
+      "year": 1950,
+      "month": 3,
+      "day": 23,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Meteorological_Day"
+      ]
+    },
+    {
+      "key": 2574411165,
+      "title": {
+        "en_US": "World Tuberculosis Day",
+        "fa_IR": "روز جهانی سل"
+      },
+      "description": {
+        "en_US": "World Tuberculosis Day, observed on 24 March each year, is designed to build public awareness about the global epidemic of tuberculosis (TB) and efforts to eliminate the disease. In 2012, 8.6 million people fell ill with TB, and 1.3 million died from the disease, mostly in low and middle-income countries.",
+        "fa_IR": "روز جهانی سل، ۲۴ مارس هر سال، برای افزایش آگاهی عمومی در خصوص همه‌گیری جهانی سل و تلاش برای نابودی آن اختصاص داده شده‌است."
+      },
+      "month": 3,
+      "day": 24,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_سل",
+        "https://en.wikipedia.org/wiki/World_Tuberculosis_Day"
+      ]
+    },
+    {
+      "key": 3026023765,
+      "title": {
+        "en_US": "International Day for the Right to the Truth concerning Gross Human Rights Violations and for the Dignity of Victims",
+        "fa_IR": "روز جهانی حق برای حقیقت در مورد نقض فاحش حقوق بشر و عزت قربانیان"
+      },
+      "description": {
+        "en_US": "International Day for the Right to the Truth concerning Gross Human Rights Violations and for the Dignity of Victims",
+        "fa_IR": "روز جهانی حق برای حقیقت در مورد نقض فاحش حقوق بشر و عزت قربانیان"
+      },
+      "month": 3,
+      "day": 24,
+      "calendar": [
+        "International"
+      ]
+    },
+    {
+      "key": 642951870,
+      "title": {
+        "en_US": "International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade",
+        "fa_IR": "روز جهانی یادبود قربانیان برده‌داری و تجارت برده‌"
+      },
+      "description": {
+        "en_US": "The day honours and remembers those who suffered and died as a consequence of the transatlantic slave trade, which has been called \"the worst violation of human rights in history\", in which over 400 years more than 15 million men, women and children were the victims.",
+        "fa_IR": "روزی که به یاد کسانی که به دلیل تجارت برده‌ها بین اقیانوس اطلس، که «بدترین نقض حقوق بشر در تاریخ» نامیده شده‌اند، که در طی ۴۰۰ سال بیش از ۱۵ میلیون مرد، زن و کودکان قربانی شدند."
+      },
+      "month": 3,
+      "day": 25,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_Remembrance_of_the_Victims_of_Slavery_and_the_Transatlantic_Slave_Trade"
+      ]
+    },
+    {
+      "key": 1821443266,
+      "title": {
+        "en_US": "International Day of Solidarity with Detained and Missing Staff Members",
+        "fa_IR": "روز جهانی همبستگی با اعضای بازداشت شده و مفقود شده کارکنان"
+      },
+      "description": {
+        "en_US": "It commemorates the anniversary of the abduction of Alec Collett, a former journalist who was working for the United Nations Relief and Works Agency for Palestine Refugees (UNRWA) when he was kidnapped by armed gunman in 1985. His body was finally found in the Bekaa Valley, Lebanon in 2009.",
+        "fa_IR": "این بزرگداشت سالگرد ربوده شدن آلک كولت، روزنامه نگار سابقی كه در آژانس امدادرسانی و کاریابی برای آوارگان فلسطینی در خاور نزدیک (اونروا) هنگامی كه در سال ۱۹۸۵ توسط افراد مسلح ربوده شد گرفته می‌شود. جسد وی سرانجام در سال ۲۰۰۹ در دره بقاع، لبنان پیدا شد."
+      },
+      "year": 2007,
+      "month": 3,
+      "day": 25,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_Solidarity_with_Detained_and_Missing_Staff_Members"
+      ]
+    },
+    {
+      "key": 2017271387,
+      "title": {
+        "en_US": "World Autism Awareness Day",
+        "fa_IR": "روز آگاهی جهانی اوتیسم"
+      },
+      "description": {
+        "en_US": "World Autism Awareness Day is an internationally recognized day on 2 April every year, encouraging Member States of the United Nations to take measures to raise awareness about people with Autism Spectrum Disorder (ASD) throughout the world.",
+        "fa_IR": ".روز آگاهی جهانی اوتیسم روز دوم آوریل هر سال است که به عنوان یک روز جهانی به رسمیت شناخته شده است و هدف آن یادآوری و ترغیب کنش های کشورهای عضو در سازمان ملل متحد در جهت افزایش آگاهی در مورد افراد مبتلا به اختلال اسپکتروم اوتیسم در سراسر جهان است"
+      },
+      "year": 2007,
+      "month": 4,
+      "day": 2,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_آگاهی_جهانی_اوتیسم",
+        "https://en.wikipedia.org/wiki/World_Autism_Awareness_Day"
+      ]
+    },
+    {
+      "key": 493118727,
+      "title": {
+        "en_US": "International Day of Sport for Development and Peace",
+        "fa_IR": "روز جهانی ورزش برای صلح و توسعه"
+      },
+      "description": {
+        "en_US": "The International Day of Sport for Development and Peace (IDSDP) is an annual celebration of the power of sport to drive social change, community development and to foster peace and understanding.",
+        "fa_IR": ".روز جهانی ورزش برای صلح و توسعه در روز 6 آوریل توسط سازمان ملل متحد نامگزاری شد.روز ششم آوریل در واقع آغازگر نخستین دوره بازی های المپیک تابستانی مدرن در سال 1896 به میزبانی یونان بوده و همین علت این روز به عنوان روز ورزش در خدمت صلح و توسعه نام گذاری شده است"
+      },
+      "year": 2014,
+      "month": 4,
+      "day": 6,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_ورزش_برای_صلح_و_توسعه",
+        "https://en.wikipedia.org/wiki/International_Day_of_Sport_for_Development_and_Peace"
+      ]
+    },
+    {
+      "key": 3197235219,
+      "title": {
+        "en_US": "World Health Day",
+        "fa_IR": "روز جهانی بهداشت"
+      },
+      "description": {
+        "en_US": "The World Health Day is a global health awareness day celebrated every year on 7 April, under the sponsorship of the World Health Organization (WHO), as well as other related organizations.",
+        "fa_IR": ".روز جهانی بهداشت سالروز مقارن هفتم آوریل است که تحت حمایت سازمان بهداشت جهانی قرار دارد و همه ساله در این روز تحت نظارت مجمع بهداشت جهانی و دیگر سازمان های مرتبط جشن گرفته می شود"
+      },
+      "year": 1950,
+      "month": 4,
+      "day": 7,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_بهداشت",
+        "https://en.wikipedia.org/wiki/World_Health_Day"
+      ]
+    },
+    {
+      "key": 2930224864,
+      "title": {
+        "en_US": "International Day of Human Space Flight",
+        "fa_IR": "روز جهانی پرواز فضایی انسان"
+      },
+      "description": {
+        "en_US": "The International Day of Human Space Flight is the annual celebration, held on April 12, of the anniversary of the first human space flight by Yuri Gagarin. It was proclaimed at the 65th session of the United Nations General Assembly on April 7, 2011,[1] a few days before the 50th anniversary of the flight.",
+        "fa_IR": ".روز جهانی پرواز فضایی بشر ، جشن سالیانه است که در تاریخ 12 آوریل ، سالگرد اولین پرواز فضایی انسان توسط یوری گاگارین برگزار می شود. این در 65مین جلسه مجمع عمومی سازمان ملل متحد در 7 آوریل 2011، چند روز قبل از پنجاهمین سالگرد پرواز اعلام شد"
+      },
+      "year": 2011,
+      "month": 4,
+      "day": 12,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_Human_Space_Flight"
+      ]
+    },
+    {
+      "key": 2108866373,
+      "title": {
+        "en_US": "World Creativity and Innovation Day",
+        "fa_IR": "روز جهانی خلاقیت و نوآوری"
+      },
+      "description": {
+        "en_US": "The first World Creativity and Innovation Day (#WCID), as announced by the United Nations, was celebrated on April 21, 2018.",
+        "fa_IR": ".اولین روز جهانی خلاقیت و نوآوری، همانطور که سازمان ملل اعلام کرده بود، در تاریخ 21 آوریل 2018 جشن گرفته شد"
+      },
+      "year": 2018,
+      "month": 4,
+      "day": 21,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Creativity_and_Innovation_Day"
+      ]
+    },
+    {
+      "key": 2498424894,
+      "title": {
+        "en_US": "International Earth Day",
+        "fa_IR": "روز جهانی زمین"
+      },
+      "description": {
+        "en_US": "Earth Day is an annual event celebrated around the world on April 22 to demonstrate support for environmental protection. First celebrated in 1970, it now includes events coordinated globally by the Earth Day Network[1] in more than 193 countries.",
+        "fa_IR": ".روز زمین یک رویداد سالانه است که در 22 آوریل در سراسر جهان برگزار می شود تا حمایت از حفاظت از محیط زیست را نشان دهد. اولین بار که در سال 1970 جشن گرفته شد، اکنون شامل رویدادهایی است که توسط شبکه جهانی زمین در بیش از 193 کشور جهان هماهنگ شده است"
+      },
+      "year": 1970,
+      "month": 4,
+      "day": 22,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_زمین",
+        "https://en.wikipedia.org/wiki/Earth_Day"
+      ]
+    },
+    {
+      "key": 316052360,
+      "title": {
+        "en_US": "World Book and Copyright Day",
+        "fa_IR": "روز جهانی کتاب و حق مؤلف"
+      },
+      "description": {
+        "en_US": "World Book Day, also known as World Book and Copyright Day, or International Day of the Book, is an annual event organized by the United Nations Educational, Scientific and Cultural Organization (UNESCO) to promote reading, publishing, and copyright. World Book Day was first celebrated on 23 April 1995, and continues to be recognized on that day. A related event in the United Kingdom and Ireland is observed in March.",
+        "fa_IR": ".روز جهانی کتاب و حق مولف یا روز جهانی کتاب و حق مولف، یک رویداد سالانه‌ی پیش بینی شده توسط یونسکو است که در ۲۳ام آوریل هر سال به منظور ترویج خواندن و احترام به حق مولف برگزار می‌شود. در بریتانیا این روز در اولین دوشنبه ماه مارس برگزار می‌گردد. روز جهانی کتاب و حق مولف اولین بار در سال ۱۹۹۵ معرفی شد"
+      },
+      "year": 1995,
+      "month": 4,
+      "day": 23,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_کتاب_و_حق_مؤلف",
+        "https://en.wikipedia.org/wiki/World_Book_Day"
+      ]
+    },
+    {
+      "key": 3224381776,
+      "title": {
+        "en_US": "World Malaria Day",
+        "fa_IR": "روز جهانی مالاریا"
+      },
+      "description": {
+        "en_US": "World Malaria Day (WMD) is an international observance commemorated every year on 25 April and recognizes global efforts to control malaria. Globally, 3.3 billion people in 106 countries are at risk of malaria.[1] In 2012, malaria caused an estimated 627,000 deaths, mostly among African children.[2] Asia, Latin America, and to a lesser extent the Middle East and parts of Europe are also affected.",
+        "fa_IR": ".روز جهانی مالاریا یک رعایت جهانی‌ست که هر ساله در ۲۵ آوریل برگزار شده و به عنوان تلاش جهانی برای کنترل مالاریا شناخته می‌شود. در جهان ۳٫۳ میلیون نفر در ۱۰۶ کشور در خطر ریسک ابتلا به مالاریا هستند. در سال ۲۰۱۲ مالاریا به‌طور تخمینی ۶۲۷٬۰۰۰ کشته غالباً در کودکان آفریقایی داده‌است. آسیا، آمریکای لاتین و کمتر در خاورمیانه و قسمت‌هایی از اروپا نیز تحت تأثیر بوده‌اند"
+      },
+      "year": 2001,
+      "month": 4,
+      "day": 25,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_مالاریا",
+        "https://en.wikipedia.org/wiki/World_Malaria_Day"
+      ]
+    },
+    {
+      "key": 3080226571,
+      "title": {
+        "en_US": "World Day for Safety and Health at Work",
+        "fa_IR": "روز جهانی ایمنی و سلامت در محل کار"
+      },
+      "description": {
+        "en_US": "World Day for Safety and Health at Work is a UN international day that is celebrated every April 28. It is concerned about safe work and awareness of the dimensions and consequences of work-related accidents and diseases; to place occupational safety and health (OSH) on the international and national agendas; and to provide support to the national efforts for the improvement of national OSH systems and programmes in line with relevant international labour standards.",
+        "fa_IR": ".روز جهانی ایمنی و بهداشت محیط کار روز جهانی سازمان ملل است که هر روز 28 آوریل برگزار می شود. در مورد کار ایمن و آگاهی از ابعاد و پیامدهای حوادث و بیماری های ناشی از کار. ایمنی و بهداشت شغلی را در برنامه های ملی و بین المللی گنجانید و از تلاش های ملی برای بهبود سیستم ها و برنامه های ملی ملی بهداشت مطابق با استانداردهای بین المللی کار مربوطه پشتیبانی کنید"
+      },
+      "year": 2003,
+      "month": 4,
+      "day": 28,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Workers%27_Memorial_Day#World_Day_for_Safety_and_Health_at_Work"
+      ]
+    },
+    {
+      "key": 159529648,
+      "title": {
+        "en_US": "International Jazz Day",
+        "fa_IR": "روز جهانی موسیقی جاز"
+      },
+      "description": {
+        "en_US": "International Jazz Day is an International Day declared by the United Nations Educational, Scientific and Cultural Organization in 2011 \"to highlight jazz and its diplomatic role of uniting people in all corners of the globe.",
+        "fa_IR": ".روز جهانی جاز یک روز جهانی است که در سال 2011 توسط سازمان آموزشی، علمی و فرهنگی سازمان ملل متحد به منظور برجسته کردن جاز و نقش دیپلماتیک آن در متحد کردن مردم در گوشه و کنار جهان اعلام شده است"
+      },
+      "year": 2012,
+      "month": 4,
+      "day": 30,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Jazz_Day"
+      ]
+    },
+    {
+      "key": 3224922299,
+      "title": {
+        "en_US": "World Tuna Day",
+        "fa_IR": "روز جهانی ماهی تن"
+      },
+      "description": {
+        "en_US": "World Tuna Day",
+        "fa_IR": "روز جهانی ماهی تن"
+      },
+      "year": 2017,
+      "month": 5,
+      "day": 2,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/ماهی_تن",
+        "https://en.wikipedia.org/wiki/Tuna"
+      ]
+    },
+    {
+      "key": 3795001220,
+      "title": {
+        "en_US": "World Press Freedom Day",
+        "fa_IR": "روز جهانی آزادی مطبوعات"
+      },
+      "description": {
+        "en_US": "World Press Freedom Day",
+        "fa_IR": "روز جهانی آزادی مطبوعات"
+      },
+      "year": 1993,
+      "month": 5,
+      "day": 3,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_آزادی_مطبوعات",
+        "https://en.wikipedia.org/wiki/World_Press_Freedom_Day"
+      ]
+    },
+    {
+      "key": 2146139582,
+      "title": {
+        "en_US": "Time of Remembrance and Reconciliation for Those Who Lost Their Lives during the Second World War",
+        "fa_IR": "روز جهانی یادبود درگذشتگان در جنگ جهانی دوم"
+      },
+      "description": {
+        "en_US": "Time of Remembrance and Reconciliation for Those Who Lost Their Lives during the Second World War",
+        "fa_IR": "روز جهانی یادبود درگذشتگان در جنگ جهانی دوم"
+      },
+      "year": 2004,
+      "month": 5,
+      "day": 8,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Time_of_Remembrance_and_Reconciliation_for_Those_Who_Lost_Their_Lives_during_the_Second_World_War"
+      ]
+    },
+    {
+      "key": 1192739893,
+      "title": {
+        "en_US": "Time of Remembrance and Reconciliation for Those Who Lost Their Lives during the Second World War",
+        "fa_IR": "روز جهانی یادبود درگذشتگان در جنگ جهانی دوم"
+      },
+      "description": {
+        "en_US": "Time of Remembrance and Reconciliation for Those Who Lost Their Lives during the Second World War",
+        "fa_IR": "روز جهانی یادبود درگذشتگان در جنگ جهانی دوم"
+      },
+      "year": 2004,
+      "month": 5,
+      "day": 9,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Time_of_Remembrance_and_Reconciliation_for_Those_Who_Lost_Their_Lives_during_the_Second_World_War"
+      ]
+    },
+    {
+      "key": 93086621,
+      "title": {
+        "en_US": "World Migratory Bird Day",
+        "fa_IR": "روز جهانی مهاجرت پرندگان"
+      },
+      "description": {
+        "en_US": "World Migratory Bird Day",
+        "fa_IR": "روز جهانی مهاجرت پرندگان"
+      },
+      "year": 2006,
+      "month": 5,
+      "day": 11,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bird_Day"
+      ]
+    },
+    {
+      "key": 801140867,
+      "title": {
+        "en_US": "International Day of Families",
+        "fa_IR": "روز جهانی خانواده"
+      },
+      "description": {
+        "en_US": "International Day of Families",
+        "fa_IR": "روز جهانی خانواده"
+      },
+      "year": 1993,
+      "month": 5,
+      "day": 15,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_Families"
+      ]
+    },
+    {
+      "key": 2116139902,
+      "title": {
+        "en_US": "International Day of Light",
+        "fa_IR": "روز جهانی نور"
+      },
+      "description": {
+        "en_US": "International Day of Light",
+        "fa_IR": "روز جهانی نور"
+      },
+      "year": 2017,
+      "month": 5,
+      "day": 16,
+      "calendar": [
+        "International"
+      ]
+    },
+    {
+      "key": 3644212449,
+      "title": {
+        "en_US": "International Day of Living Together in Peace",
+        "fa_IR": "روز جهانی زندگی صلح‌آمیز در کنارهم"
+      },
+      "description": {
+        "en_US": "International Day of Living Together in Peace",
+        "fa_IR": "روز جهانی زندگی صلح‌آمیز در کنارهم"
+      },
+      "year": 2018,
+      "month": 5,
+      "day": 16,
+      "calendar": [
+        "International"
+      ]
+    },
+    {
+      "key": 3157923633,
+      "title": {
+        "en_US": "World Telecommunication and Information Society Day",
+        "fa_IR": "روز جهانی ارتباطات و جامعه اطلاعاتی"
+      },
+      "description": {
+        "en_US": "World Telecommunication and Information Society Day",
+        "fa_IR": "روز جهانی ارتباطات و جامعه اطلاعاتی"
+      },
+      "year": 1969,
+      "month": 5,
+      "day": 17,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Information_Society_Day"
+      ]
+    },
+    {
+      "key": 2879681297,
+      "title": {
+        "en_US": "International Day of Vesak",
+        "fa_IR": "روز جهانی وساک"
+      },
+      "description": {
+        "en_US": "International Day of Vesak",
+        "fa_IR": "روز جهانی وساک یا روز بودا، مقدس‌ترین روز برای میلیون ها بودایی در سراسر جهان"
+      },
+      "year": 2000,
+      "month": 5,
+      "day": 17,
+      "calendar": [
+        "International",
+        "Buddhist"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_Vesak"
+      ]
+    },
+    {
+      "key": 144004021,
+      "title": {
+        "en_US": "World Bee Day",
+        "fa_IR": "روز جهانی زنبور عسل"
+      },
+      "description": {
+        "en_US": "World Bee Day",
+        "fa_IR": "روز جهانی زنبور عسل"
+      },
+      "year": 2017,
+      "month": 5,
+      "day": 20,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Bee_Day"
+      ]
+    },
+    {
+      "key": 279817583,
+      "title": {
+        "en_US": "World Day for Cultural Diversity for Dialogue and Development",
+        "fa_IR": "روز جهانی تنوع فرهنگی برای گفتگو و توسعه"
+      },
+      "description": {
+        "en_US": "World Day for Cultural Diversity for Dialogue and Development",
+        "fa_IR": "روز جهانی تنوع فرهنگی برای گفتگو و توسعه"
+      },
+      "year": 2002,
+      "month": 5,
+      "day": 21,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Day_for_Cultural_Diversity_for_Dialogue_and_Development"
+      ]
+    },
+    {
+      "key": 1070842472,
+      "title": {
+        "en_US": "International Day for Biological Diversity",
+        "fa_IR": "روز جهانی تنوع زیستی"
+      },
+      "description": {
+        "en_US": "International Day for Biological Diversity",
+        "fa_IR": "روز جهانی تنوع زیستی"
+      },
+      "year": 2000,
+      "month": 5,
+      "day": 22,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_for_Biological_Diversity",
+        "https://fa.wikipedia.org/wiki/تنوع_زیستی"
+      ]
+    },
+    {
+      "key": 2331669382,
+      "title": {
+        "en_US": "International Day to End Obstetric Fistula",
+        "fa_IR": "روز جهانی مبارزه با فیستول زایمانی"
+      },
+      "description": {
+        "en_US": "International Day to End Obstetric Fistula",
+        "fa_IR": "روز جهانی مبارزه با فیستول زایمانی"
+      },
+      "year": 2013,
+      "month": 5,
+      "day": 23,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Obstetric_fistula"
+      ]
+    },
+    {
+      "key": 425784321,
+      "title": {
+        "en_US": "International Day of United Nations Peacekeepers",
+        "fa_IR": "روز جهانی حافظان صلح سازمان ملل متحد"
+      },
+      "description": {
+        "en_US": "International Day of United Nations Peacekeepers",
+        "fa_IR": "روز جهانی حافظان صلح سازمان ملل متحد"
+      },
+      "year": 2002,
+      "month": 5,
+      "day": 29,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_United_Nations_Peacekeepers"
+      ]
+    },
+    {
+      "key": 1726157260,
+      "title": {
+        "en_US": "World No Tobacco Day",
+        "fa_IR": "روز جهانی بدون دخانیات"
+      },
+      "description": {
+        "en_US": "World No Tobacco Day",
+        "fa_IR": "روز جهانی بدون دخانیات"
+      },
+      "year": 1987,
+      "month": 5,
+      "day": 31,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_بدون_دخانیات",
+        "https://en.wikipedia.org/wiki/World_No_Tobacco_Day"
+      ]
+    },
+    {
+      "key": 317588032,
+      "title": {
+        "en_US": "International Day of the World's Indigenous Peoples",
+        "fa_IR": "روز جهانی مردمان بومی جهان"
+      },
+      "description": {
+        "en_US": "International Day of the World's Indigenous Peoples",
+        "fa_IR": "روز جهانی مردمان بومی جهان"
+      },
+      "year": 1994,
+      "month": 8,
+      "day": 9,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_the_World's_Indigenous_Peoples"
+      ]
+    },
+    {
+      "key": 4044902533,
+      "title": {
+        "en_US": "International Youth Day",
+        "fa_IR": "روز جهانی جوانان"
+      },
+      "description": {
+        "en_US": "International Youth Day",
+        "fa_IR": "روز جهانی جوانان"
+      },
+      "year": 2000,
+      "month": 8,
+      "day": 12,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_جوانان",
+        "https://en.wikipedia.org/wiki/International_Youth_Day"
+      ]
+    },
+    {
+      "key": 2940542930,
+      "title": {
+        "en_US": "World Humanitarian Day",
+        "fa_IR": "روز جهانی بشر دوستی"
+      },
+      "description": {
+        "en_US": "World Humanitarian Day",
+        "fa_IR": "روز جهانی بشر دستی"
+      },
+      "year": 2009,
+      "month": 8,
+      "day": 19,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Humanitarian_Day"
+      ]
+    },
+    {
+      "key": 3039648927,
+      "title": {
+        "en_US": "International Day of Remembrance and Tribute to the Victims of Terrorism",
+        "fa_IR": "روز جهانی قربانیان تروریسم"
+      },
+      "description": {
+        "en_US": "International Day of Remembrance and Tribute to the Victims of Terrorism",
+        "fa_IR": "روز جهانی قربانیان تروریسم"
+      },
+      "year": 2017,
+      "month": 8,
+      "day": 21,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_Remembrance_and_Tribute_to_the_Victims_of_Terrorism"
+      ]
+    },
+    {
+      "key": 769870273,
+      "title": {
+        "en_US": "International Day for the Remembrance of the Slave Trade and Its Abolition",
+        "fa_IR": "روز جهانی یادآوری تجارت برده و نابودی آن"
+      },
+      "description": {
+        "en_US": "International Day for the Remembrance of the Slave Trade and Its Abolition",
+        "fa_IR": "روز جهانی یادآوری تجارت برده و نابودی آن"
+      },
+      "year": 1998,
+      "month": 8,
+      "day": 23,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_for_the_Remembrance_of_the_Slave_Trade_and_its_Abolition"
+      ]
+    },
+    {
+      "key": 4279461629,
+      "title": {
+        "en_US": "International Day against Nuclear Tests",
+        "fa_IR": "روز جهانی مبارزه با آزمایش هسته ای"
+      },
+      "description": {
+        "en_US": "International Day against Nuclear Tests",
+        "fa_IR": "روز جهانی مبارزه با آزمایش هسته ای"
+      },
+      "year": 2009,
+      "month": 8,
+      "day": 29,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_against_Nuclear_Tests"
+      ]
+    },
+    {
+      "key": 1662825297,
+      "title": {
+        "en_US": "International Day of the Victims of Enforced Disappearances",
+        "fa_IR": "روز جهانی ناپدیدشدگان"
+      },
+      "description": {
+        "en_US": "International Day of the Victims of Enforced Disappearances",
+        "fa_IR": "روز جهانی ناپدیدشدگان"
+      },
+      "year": 1992,
+      "month": 8,
+      "day": 30,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_ناپدیدشدگان",
+        "https://en.wikipedia.org/wiki/International_Day_of_the_Disappeared"
+      ]
+    },
+    {
+      "key": 358103194,
+      "title": {
+        "en_US": "International Day of Charity",
+        "fa_IR": "روز جهانی خیریه"
+      },
+      "description": {
+        "en_US": "International Day of Charity",
+        "fa_IR": "روز جهانی خیریه"
+      },
+      "year": 2012,
+      "month": 9,
+      "day": 5,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_Charity"
+      ]
+    },
+    {
+      "key": 49623202,
+      "title": {
+        "en_US": "International Literacy Day",
+        "fa_IR": "روز جهانی سواد آموزی"
+      },
+      "description": {
+        "en_US": "International Literacy Day",
+        "fa_IR": "روز جهانی سواد آموزی"
+      },
+      "year": 1967,
+      "month": 9,
+      "day": 8,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Literacy_Day",
+        "https://fa.wikipedia.org/wiki/روز_جهانی_سوادآموزی"
+      ]
+    },
+    {
+      "key": 3360426085,
+      "title": {
+        "en_US": "World Suicide Prevention Day",
+        "fa_IR": "روز جهانی پیشگیری از خودکشی"
+      },
+      "description": {
+        "en_US": "World Suicide Prevention Day",
+        "fa_IR": "روز جهانی پیشگیری از خودکشی"
+      },
+      "year": 2003,
+      "month": 9,
+      "day": 10,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Suicide_Prevention_Day",
+        "https://fa.wikipedia.org/wiki/روز_جهانی_پیشگیری_از_خودکشی"
+      ]
+    },
+    {
+      "key": 3195460027,
+      "title": {
+        "en_US": "United Nations Day for South-South Cooperation",
+        "fa_IR": "روز سازمان ملل متحد برای همکاری های جنوبی - جنوبی"
+      },
+      "description": {
+        "en_US": "United Nations Day for South-South Cooperation",
+        "fa_IR": "روز سازمان ملل متحد برای همکاری های جنوبی - جنوبی"
+      },
+      "month": 9,
+      "day": 12,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/South-South_cooperation"
+      ]
+    },
+    {
+      "key": 4085835896,
+      "title": {
+        "en_US": "International Day of Democracy",
+        "fa_IR": "روز جهانی دموکراسی"
+      },
+      "description": {
+        "en_US": "International Day of Democracy",
+        "fa_IR": "روز جهانی دموکراسی"
+      },
+      "year": 2007,
+      "month": 9,
+      "day": 15,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_Democracy",
+        "https://fa.wikipedia.org/wiki/روز_جهانی_دموکراسی"
+      ]
+    },
+    {
+      "key": 166987020,
+      "title": {
+        "en_US": "International Day for the Preservation of the Ozone Layer",
+        "fa_IR": "روز جهانی حفظ لایه ازن"
+      },
+      "description": {
+        "en_US": "International Day for the Preservation of the Ozone Layer",
+        "fa_IR": "روز جهانی حفظ لایه ازن"
+      },
+      "year": 2000,
+      "month": 9,
+      "day": 16,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_for_the_Preservation_of_the_Ozone_Layer",
+        "https://fa.wikipedia.org/wiki/لایه_ازون"
+      ]
+    },
+    {
+      "key": 3911448138,
+      "title": {
+        "en_US": "International Day of Peace",
+        "fa_IR": "روز جهانی صلح"
+      },
+      "description": {
+        "en_US": "International Day of Peace",
+        "fa_IR": "روز جهانی صلح"
+      },
+      "year": 1981,
+      "month": 9,
+      "day": 21,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_Peace",
+        "https://fa.wikipedia.org/wiki/روز_جهانی_صلح"
+      ]
+    },
+    {
+      "key": 641680339,
+      "title": {
+        "en_US": "International Day of Sign Languages",
+        "fa_IR": "روز جهانی زبان های اشاره"
+      },
+      "description": {
+        "en_US": "International Day of Sign Languages",
+        "fa_IR": "روز جهانی زبان های اشاره"
+      },
+      "year": 2018,
+      "month": 9,
+      "day": 23,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_Sign_Languages",
+        "https://fa.wikipedia.org/wiki/زبان_اشاره"
+      ]
+    },
+    {
+      "key": 1673800410,
+      "title": {
+        "en_US": "International Day for the Total Elimination of Nuclear Weapons",
+        "fa_IR": "روز جهانی از بین بردن کامل سلاح های هسته ای"
+      },
+      "description": {
+        "en_US": "International Day for the Total Elimination of Nuclear Weapons",
+        "fa_IR": "روز جهانی از بین بردن کامل سلاح های هسته ای"
+      },
+      "month": 9,
+      "day": 26,
+      "calendar": [
+        "International"
+      ]
+    },
+    {
+      "key": 3789590717,
+      "title": {
+        "en_US": "World Maritime Day",
+        "fa_IR": "روز جهانی دریانوردی"
+      },
+      "description": {
+        "en_US": "World Maritime Day",
+        "fa_IR": "روز جهانی دریانوردی"
+      },
+      "month": 9,
+      "day": 26,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Maritime_Day"
+      ]
+    },
+    {
+      "key": 676009225,
+      "title": {
+        "en_US": "World Tourism Day",
+        "fa_IR": "روز جهانی گردشگری"
+      },
+      "description": {
+        "en_US": "World Tourism Day",
+        "fa_IR": "روز جهانی گردشگری"
+      },
+      "year": 1980,
+      "month": 9,
+      "day": 27,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Tourism_Day",
+        "https://fa.wikipedia.org/wiki/روز_جهانی_گردشگری"
+      ]
+    },
+    {
+      "key": 1777986021,
+      "title": {
+        "en_US": "World Rabies Day",
+        "fa_IR": "روز جهانی هاری"
+      },
+      "description": {
+        "en_US": "World Rabies Day",
+        "fa_IR": "روز جهانی هاری"
+      },
+      "month": 9,
+      "day": 28,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Rabies_Day",
+        "https://fa.wikipedia.org/wiki/هاری"
+      ]
+    },
+    {
+      "key": 2130721632,
+      "title": {
+        "en_US": "International Day for Universal Access to Information",
+        "fa_IR": "روز جهانی دسترسی عمومی به اطلاعات"
+      },
+      "description": {
+        "en_US": "International Day for Universal Access to Information",
+        "fa_IR": "روز جهانی دسترسی عمومی به اطلاعات"
+      },
+      "year": 2015,
+      "month": 9,
+      "day": 28,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Access_to_Information_Day"
+      ]
+    },
+    {
+      "key": 353414211,
+      "title": {
+        "en_US": "International Translation Day",
+        "fa_IR": "روز جهانی ترجمه"
+      },
+      "description": {
+        "en_US": "International Translation Day",
+        "fa_IR": "روز جهانی ترجمه"
+      },
+      "year": 1953,
+      "month": 9,
+      "day": 30,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Translation_Day",
+        "https://fa.wikipedia.org/wiki/روز_جهانی_ترجمه"
+      ]
+    },
+    {
+      "key": 1492275135,
+      "title": {
+        "en_US": "International Day of Older Persons",
+        "fa_IR": "روز جهانی سالمندان"
+      },
+      "description": {
+        "en_US": "International Day of Older Persons",
+        "fa_IR": "روز جهانی سالمندان"
+      },
+      "year": 1990,
+      "month": 10,
+      "day": 1,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_سالمندان",
+        "https://en.wikipedia.org/wiki/International_Day_of_Older_Persons"
+      ]
+    },
+    {
+      "key": 294450143,
+      "title": {
+        "en_US": "International Day of Non-Violence",
+        "fa_IR": "روز جهانی عدم خشونت"
+      },
+      "description": {
+        "en_US": "International Day of Non-Violence",
+        "fa_IR": "روز جهانی عدم خشونت"
+      },
+      "year": 2007,
+      "month": 10,
+      "day": 2,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_of_Non-Violence"
+      ]
+    },
+    {
+      "key": 1116089235,
+      "title": {
+        "en_US": "World Teachers’ Day",
+        "fa_IR": "روز جهانی معلمان"
+      },
+      "description": {
+        "en_US": "World Teachers’ Day",
+        "fa_IR": "روز جهانی معلمان"
+      },
+      "year": 1994,
+      "month": 10,
+      "day": 5,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_معلم",
+        "https://en.wikipedia.org/wiki/World_Teachers_Day"
+      ]
+    },
+    {
+      "key": 3144600128,
+      "title": {
+        "en_US": "World Habitat Day",
+        "fa_IR": "روز جهانی اسکان بشر"
+      },
+      "description": {
+        "en_US": "World Habitat Day",
+        "fa_IR": "روز جهانی اسکان بشر"
+      },
+      "year": 1986,
+      "month": 10,
+      "day": 7,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_معماری",
+        "https://en.wikipedia.org/wiki/World_Habitat_Day"
+      ]
+    },
+    {
+      "key": 2627165971,
+      "title": {
+        "en_US": "World Post Day",
+        "fa_IR": "روز جهانی پست"
+      },
+      "description": {
+        "en_US": "World Post Day",
+        "fa_IR": "روز جهانی پست"
+      },
+      "year": 1969,
+      "month": 10,
+      "day": 9,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/اتحادیه_جهانی_پست",
+        "https://en.wikipedia.org/wiki/World_Post_Day"
+      ]
+    },
+    {
+      "key": 1037179339,
+      "title": {
+        "en_US": "World Mental Health Day",
+        "fa_IR": "روز جهانی سلامت روان"
+      },
+      "description": {
+        "en_US": "World Mental Health Day",
+        "fa_IR": "روز جهانی سلامت روان"
+      },
+      "year": 1992,
+      "month": 10,
+      "day": 10,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Mental_Health_Day"
+      ]
+    },
+    {
+      "key": 2952665341,
+      "title": {
+        "en_US": "International Day of the Girl Child",
+        "fa_IR": "روز جهانی فرزند دختر"
+      },
+      "description": {
+        "en_US": "International Day of the Girl Child",
+        "fa_IR": "روز جهانی فرزند دختر"
+      },
+      "year": 2012,
+      "month": 10,
+      "day": 11,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/دختر",
+        "https://en.wikipedia.org/wiki/International_Day_of_the_Girl_Child"
+      ]
+    },
+    {
+      "key": 37597349,
+      "title": {
+        "en_US": "World Migratory Bird Day",
+        "fa_IR": "روز جهانی پرنده مهاجر"
+      },
+      "description": {
+        "en_US": "World Migratory Bird Day",
+        "fa_IR": "روز جهانی پرنده مهاجر"
+      },
+      "year": 2006,
+      "month": 10,
+      "day": 12,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bird_Day#World_Migratory_Bird_Day"
+      ]
+    },
+    {
+      "key": 817672011,
+      "title": {
+        "en_US": "International Day for Disaster Risk Reduction",
+        "fa_IR": "روز جهانی کاهش خطر بلایای طبیعی"
+      },
+      "description": {
+        "en_US": "International Day for Disaster Risk Reduction",
+        "fa_IR": "روز جهانی کاهش خطر بلایای طبیعی"
+      },
+      "year": 2009,
+      "month": 10,
+      "day": 13,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/بلایای_طبیعی",
+        "https://en.wikipedia.org/wiki/International_Day_for_Disaster_Reduction"
+      ]
+    },
+    {
+      "key": 1614532998,
+      "title": {
+        "en_US": "World Standards Day",
+        "fa_IR": "روز جهانی استاندارد"
+      },
+      "description": {
+        "en_US": "World Standards Day",
+        "fa_IR": "روز جهانی استاندارد"
+      },
+      "year": 1946,
+      "month": 10,
+      "day": 14,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Standards_Day"
+      ]
+    },
+    {
+      "key": 3151694865,
+      "title": {
+        "en_US": "World Food Day",
+        "fa_IR": "روز جهانی غذا"
+      },
+      "description": {
+        "en_US": "World Food Day",
+        "fa_IR": "روز جهانی غذا"
+      },
+      "year": 1945,
+      "month": 10,
+      "day": 16,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_غذا",
+        "https://en.wikipedia.org/wiki/World_Food_Day"
+      ]
+    },
+    {
+      "key": 1554983032,
+      "title": {
+        "en_US": "International Day for the Eradication of Poverty",
+        "fa_IR": "روز جهانی مبارزه با فقر"
+      },
+      "description": {
+        "en_US": "International Day for the Eradication of Poverty",
+        "fa_IR": "روز جهانی مبارزه با فقر"
+      },
+      "year": 1992,
+      "month": 10,
+      "day": 17,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_ریشه‌کنی_فقر",
+        "https://en.wikipedia.org/wiki/International_Day_for_the_Eradication_of_Poverty"
+      ]
+    },
+    {
+      "key": 3939152113,
+      "title": {
+        "en_US": "World Statistics Day",
+        "fa_IR": "روز جهانی آمار"
+      },
+      "description": {
+        "en_US": "World Statistics Day",
+        "fa_IR": "روز جهانی آمار"
+      },
+      "year": 2010,
+      "month": 10,
+      "day": 20,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/روز_جهانی_آمار",
+        "https://en.wikipedia.org/wiki/World_Statistics_Day"
+      ]
+    },
+    {
+      "key": 872767207,
+      "title": {
+        "en_US": "United Nations Day",
+        "fa_IR": "روز سازمان ملل"
+      },
+      "description": {
+        "en_US": "United Nations Day",
+        "fa_IR": "روز سازمان ملل"
+      },
+      "year": 1971,
+      "month": 10,
+      "day": 24,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://fa.wikipedia.org/wiki/سازمان_ملل_متحد",
+        "https://en.wikipedia.org/wiki/United_Nations_Day"
+      ]
+    },
+    {
+      "key": 2949243932,
+      "title": {
+        "en_US": "World Development Information Day",
+        "fa_IR": "روز جهانی توسعه اطلاعات"
+      },
+      "description": {
+        "en_US": "World Development Information Day",
+        "fa_IR": "روز جهانی توسعه اطلاعات"
+      },
+      "year": 1972,
+      "month": 10,
+      "day": 24,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Development_Information_Day"
+      ]
+    },
+    {
+      "key": 2027982687,
+      "title": {
+        "en_US": "World Day for Audiovisual Heritage",
+        "fa_IR": "روز جهانی میراث سمعی و بصری"
+      },
+      "description": {
+        "en_US": "World Day for Audiovisual Heritage",
+        "fa_IR": "روز جهانی میراث سمعی و بصری"
+      },
+      "year": 2005,
+      "month": 10,
+      "day": 27,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Day_for_Audiovisual_Heritage"
+      ]
+    },
+    {
+      "key": 3204415575,
+      "title": {
+        "en_US": "International Day to End Impunity for Crimes against Journalists",
+        "fa_IR": "روز جهانی پایان دادن به مصونیت از مجازات جنایات علیه روزنامه‌نگاران"
+      },
+      "description": {
+        "en_US": "The International Day to End Impunity for Crimes against Journalists is a UN-recognized day observed annually on 2 November."
+      },
+      "year": 2013,
+      "month": 11,
+      "day": 2,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_to_End_Impunity_for_Crimes_Against_Journalists"
+      ]
+    },
+    {
+      "key": 39212089,
+      "title": {
+        "en_US": "World Tsunami Awareness Day",
+        "fa_IR": "روز جهانی اطلاع از سونامی"
+      },
+      "description": {
+        "en_US": "In December 2015, the UN General Assembly designated 5 November as World Tsunami Awareness Day."
+      },
+      "year": 2016,
+      "month": 11,
+      "day": 5,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tsunami"
+      ]
+    },
+    {
+      "key": 478452140,
+      "title": {
+        "en_US": "World Science Day for Peace and Development",
+        "fa_IR": "روز جهانی علم در خدمت صلح و توسعه"
+      },
+      "description": {
+        "en_US": "World Science Day for Peace and Development highlights the important role that science has in society and is celebrated each year on November 10",
+        "fa_IR": "روز جهانی علم در خدمت صلح و توسعه توسط سازمان فرهنگی، علمی، آموزشی ملل متحد، یونسکو و شورای بین‌المللی علوم در سال ۲۰۰۱ پایه‌گذاری شد و ۱۰ نوامبر به این مناسبت نامگذاری شد."
+      },
+      "year": 2011,
+      "month": 11,
+      "day": 10,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Science_Day_for_Peace_and_Development"
+      ]
+    },
+    {
+      "key": 1569359865,
+      "title": {
+        "en_US": "World Diabetes Day",
+        "fa_IR": "روز جهانی دیابت"
+      },
+      "description": {
+        "en_US": "World Diabetes Day is the primary global awareness campaign focusing on diabetes mellitus and is held on 14 November each year.",
+        "fa_IR": "مراسم روز جهانی دیابت هرساله در تاریخ ۱۴ نوامبر (۲۳ آبان) در بیش از ۱۶۰ کشور جهان برگزار می‌گردد."
+      },
+      "year": 2006,
+      "month": 11,
+      "day": 14,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Diabetes_Day"
+      ]
+    },
+    {
+      "key": 2287461091,
+      "title": {
+        "en_US": "International Day for Tolerance",
+        "fa_IR": "روز جهانی مدارا"
+      },
+      "description": {
+        "en_US": "The International Day for Tolerance is an annual observance day declared by UNESCO in 1995 to generate public awareness of the dangers of intolerance. It is observed on 16 November.",
+        "fa_IR": "25 آبان هر سال برابر با 16 نوامبر روز جهانی مدارا و بردباری در کنفرانس عمومی سازمان یونسکو نامگذاری شده است و برای صلح و رشد در همه زمینه ها در سطح جهان می باشد"
+      },
+      "year": 1995,
+      "month": 11,
+      "day": 16,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_for_Tolerance"
+      ]
+    },
+    {
+      "key": 4216797540,
+      "title": {
+        "en_US": "World Day of Remembrance for Road Traffic Victims",
+        "fa_IR": "روز جهانی یادبود برای قربانیان ترافیک جاده‌ای"
+      },
+      "description": {
+        "en_US": "The World Day of Remembrance for Road Traffic Victims takes place on the third Sunday in November every year as the appropriate acknowledgment of victims of road traffic crashes and their families.",
+        "fa_IR": "در ۲۶ اکتبر سال ۲۰۰۵ سازمان ملل متحد سومین یکشنبه نوامبر هر سال را به عنوان روز جهانی یادبود قربانیان حوادث ترافیک جاده‌ای نامگذاری کرد."
+      },
+      "year": 2005,
+      "month": 11,
+      "day": 17,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Day_of_Remembrance_for_Road_Traffic_Victims"
+      ]
+    },
+    {
+      "key": 167810320,
+      "title": {
+        "en_US": "World Toilet Day",
+        "fa_IR": "روز جهانی توالت"
+      },
+      "description": {
+        "en_US": "World Toilet Day (WTD) is an official United Nations international observance day on 19 November to inspire action to tackle the global sanitation crisis.",
+        "fa_IR": "روز جهانی توالت در سال ۲۰۰۱ توسط سازمان جهانی توالت تاسیس شد. دوازده سال بعد، در سال۲۰۱۳، مجمع عمومی سازمان ملل متحد روز جهانی توالت را یک روز رسمی اعلام کرد."
+      },
+      "year": 2013,
+      "month": 11,
+      "day": 19,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Toilet_Day"
+      ]
+    },
+    {
+      "key": 523102042,
+      "title": {
+        "en_US": "Universal Children's Day",
+        "fa_IR": "روز جهانی کودک"
+      },
+      "description": {
+        "en_US": "International Children's Day is a day recognized to celebrate children. The day is celebrated on various dates in different countries.",
+        "fa_IR": "روز جهانی کودک روزی است که برای تجلیل از کودکان به رسمیت شناخته شده‌است. این روز در کشورهای مختلف در تاریخ‌های مختلف جشن می‌گیرد."
+      },
+      "year": 1920,
+      "month": 11,
+      "day": 20,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Children%27s_Day"
+      ]
+    },
+    {
+      "key": 1725305517,
+      "title": {
+        "en_US": "Africa Industrialization Day",
+        "fa_IR": "روز صنعت‌سازی در آفریقا"
+      },
+      "description": {
+        "en_US": "Africa Industrialization Day is celebrated on November 20 each year. It is a time when governments and other organizations in many African countries examine ways to stimulate Africa's industrialization process."
+      },
+      "year": 1990,
+      "month": 11,
+      "day": 20,
+      "calendar": [
+        "International"
+      ]
+    },
+    {
+      "key": 212733080,
+      "title": {
+        "en_US": "World Television Day",
+        "fa_IR": "روز جهانی تلویزیون"
+      },
+      "description": {
+        "en_US": "In December 1996 the United Nations General Assembly proclaimed 21 November as World Television Day commemorating the date on which the first World Television Forum was held in 1996.",
+        "fa_IR": "بیست و یکم نوامبر، روز جهانی تلویزیون است. در دسامبر سال ۱۹۹۶، مجمع عمومی سازمان ملل متحد، ۲۱ نوامبر را روز جهان تلویزیون اعلام کرد؛ و اولین گردهمایی جهانی تلویزیون در همان سال (۱۹۹۶) تشکیل یافت."
+      },
+      "year": 1996,
+      "month": 11,
+      "day": 21,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_Television_Day"
+      ]
+    },
+    {
+      "key": 2547208402,
+      "title": {
+        "en_US": "International Day for the Elimination of Violence against Women",
+        "fa_IR": "روز بین‌المللی مبارزه با خشونت علیه زنان"
+      },
+      "description": {
+        "en_US": "The United Nations General Assembly has designated November 25 as the International Day for the Elimination of Violence Against Women.",
+        "fa_IR": "از سال ۱۹۸۱، ۲۵ نوامبر هر سال به عنوان روز جهانی رفع خشونت علیه زنان برگزیده شده‌است. این روز برای یادآوری عزم همگانی برای مبارزه با خشونت علیه زنان انتخاب شده‌است. مجمع عمومی سازمان ملل متحد در ۱۷ اکتبر ۱۹۹۹ نامگذاری این روز را به عنوان روزی جهانی تصویب کرد."
+      },
+      "year": 1981,
+      "month": 11,
+      "day": 25,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Day_for_the_Elimination_of_Violence_against_Women"
+      ]
+    },
+    {
+      "key": 972859231,
+      "title": {
+        "en_US": "Day of Remembrance for all Victims of Chemical Warfare",
+        "fa_IR": "روز یادبود برای همه قربانیان جنگ شیمیایی"
+      },
+      "description": {
+        "en_US": "The Day of Remembrance for all Victims of Chemical Warfare is an annual event held November 30."
+      },
+      "year": 2005,
+      "month": 11,
+      "day": 30,
+      "calendar": [
+        "International"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Day_of_Remembrance_for_all_Victims_of_Chemical_Warfare"
+      ]
+    }
+  ]
+}
