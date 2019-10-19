@@ -1,6 +1,7 @@
 package com.github.persiancal.sdkremote
 
 import android.content.Context
+import com.github.persiancal.core.CalendarType
 import com.github.persiancal.core.DatabaseHandler
 import com.github.persiancal.core.db.RemoteGregorianEventsDb
 import com.github.persiancal.core.db.RemoteHijriEventsDb

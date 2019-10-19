@@ -1,4 +1,4 @@
-package com.github.persiancal.sdkremote
+package com.github.persiancal.core
 
 enum class CalendarType {
     JALALI,

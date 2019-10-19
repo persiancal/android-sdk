@@ -32,7 +32,11 @@ dependencies {
     implementation project(':core')
     implementation project(':sdk-remote')
     implementation project(':sdk-local')
-    //implementation 'com.github.persiancal:android-sdk:0.2.0'
+
+//    implementation 'com.github.persiancal.android-sdk:core:0.2.1'
+//    implementation 'com.github.persiancal.android-sdk:sdk-local:0.2.1'
+//    implementation 'com.github.persiancal.android-sdk:sdk-remote:0.2.1'
+    
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.1.0-beta01'
