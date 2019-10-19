@@ -16,7 +16,7 @@ allprojects {
 Add the dependency:
 ```gradle
 dependencies {
-	implementation 'com.github.persiancal:android-sdk:0.1.1'
+	implementation "com.github.persiancal:android-sdk:${latestRelease}"
 }
 ```
 
@@ -63,16 +63,20 @@ val jalaliEvents= RemoteCalendarEvents.getInstance().getJalaliEvents(1,2)
 - Supports API Level +21
 - Material Components 1.1.0-beta01
 
-**Libraries & Dependencies**
+**Libraries & Dependencies in the Demo**
 - [Support libraries]: appcompat / recyclerview / constraintlayout
 - [Material Design 2]: MaterialCardView / MaterialButton 
 - [FastAdapter]: The bullet proof, fast and easy to use adapter library, which minimizes developing time to a fraction
+- [PrimeDatePicker]: is a tool which provides picking a single day as well as a range of days.
+
+**Libraries & Dependencies in the SDK**
 - Square [Retrofit] / [Okhttp] / [Logging-Interceptor]
 - [RxAndroid] Reactive Extensions for Android
 
 [Support libraries]: https://developer.android.com/jetpack/androidx/
 [Material Design 2]: https://material.io/develop/android/
 [FastAdapter]: https://github.com/mikepenz/FastAdapter
+[PrimeDatePicker]: https://github.com/aminography/PrimeDatePicker
 [Retrofit]: https://github.com/square/retrofit
 [Okhttp]: https://github.com/square/okhttp
 [Logging-Interceptor]: https://github.com/square/okhttp/tree/master/okhttp-logging-interceptor
