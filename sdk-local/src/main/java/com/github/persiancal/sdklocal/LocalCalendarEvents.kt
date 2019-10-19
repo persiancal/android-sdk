@@ -1,6 +1,7 @@
 package com.github.persiancal.sdklocal
 
 import android.content.Context
+import com.github.persiancal.core.CalendarType
 import com.github.persiancal.core.DatabaseHandler
 import com.github.persiancal.core.base.EventsItem
 import com.github.persiancal.core.base.EventsResponse
