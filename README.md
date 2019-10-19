@@ -16,7 +16,12 @@ allprojects {
 Add the dependency:
 ```gradle
 dependencies {
-	implementation "com.github.persiancal:android-sdk:${latestRelease}"
+    //required
+    implementation "com.github.persiancal.android-sdk:core:${latestRelease}"
+    
+    //optional
+    implementation "com.github.persiancal.android-sdk:sdk-local:${latestRelease}"
+    implementation "com.github.persiancal.android-sdk:sdk-remote:${latestRelease}"
 }
 ```
 
