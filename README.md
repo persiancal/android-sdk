@@ -41,6 +41,13 @@ override fun onCreate() {
             .addCalendar(CalendarType.HIJRI)
             .addCalendar(CalendarType.GREGORIAN)
             .init(this)
+	//or
+	
+        LocalCalendarEvents
+            .addCalendar(CalendarType.JALALI)
+            .addCalendar(CalendarType.HIJRI)
+            .addCalendar(CalendarType.GREGORIAN)
+            .init(this)
         ...
 }
 ```
