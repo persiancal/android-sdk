@@ -92,68 +92,68 @@ class RemoteCalendarEvents {
         }
 
         private fun storeJalaliEvents(events: List<com.github.persiancal.core.base.EventsItem?>?) {
-            for (item in events!!) {
-                var holidayIran = listOf<String>()
-                if (item!!.holiday != null) {
-                    holidayIran = item.holiday!!.iran!!
+            events?.forEach { item ->
+                var holidayIran = item?.holiday?.iran ?: listOf()
+
+                val jalaliDb = item?.run {
+                    RemoteJalaliEventsDb(
+                        0,
+                        key,
+                        calendar,
+                        month,
+                        sources,
+                        year,
+                        description?.faIR,
+                        title?.faIR,
+                        day,
+                        holidayIran
+                    )
                 }
-                val jalaliDb = RemoteJalaliEventsDb(
-                    0,
-                    item.key!!.toLong(),
-                    item.calendar,
-                    item.month,
-                    item.sources,
-                    item.year,
-                    item.description!!.faIR,
-                    item.title!!.faIR,
-                    item.day,
-                    holidayIran
-                )
-                DatabaseHandler.getInstance().putRemoteJalaliEvents(jalaliDb)
+                jalaliDb?.let { DatabaseHandler.getInstance().putRemoteJalaliEvents(it) }
             }
         }
 
         private fun storeHijriEvents(events: List<com.github.persiancal.core.base.EventsItem?>?) {
-            for (item in events!!) {
-                var holidayIran = listOf<String>()
-                if (item!!.holiday != null) {
-                    holidayIran = item.holiday!!.iran!!
+            events?.forEach { item ->
+                var holidayIran = item?.holiday?.iran ?: listOf<String>()
+
+                val hijriDb = item?.run {
+                    RemoteHijriEventsDb(
+                        0,
+                        key,
+                        calendar,
+                        month,
+                        sources,
+                        year,
+                        description?.faIR,
+                        title?.faIR,
+                        day,
+                        holidayIran
+                    )
                 }
-                val hijriDb = RemoteHijriEventsDb(
-                    0,
-                    item.key!!.toLong(),
-                    item.calendar,
-                    item.month,
-                    item.sources,
-                    item.year,
-                    item.description!!.faIR,
-                    item.title!!.faIR,
-                    item.day,
-                    holidayIran
-                )
-                DatabaseHandler.getInstance().putRemoteHijriEvents(hijriDb)
+                hijriDb?.let { DatabaseHandler.getInstance().putRemoteHijriEvents(it) }
             }
         }
 
         private fun storeGregorianEvents(events: List<com.github.persiancal.core.base.EventsItem?>?) {
-            for (item in events!!) {
-                var holidayIran = listOf<String>()
-                if (item!!.holiday != null) {
-                    holidayIran = item.holiday!!.iran!!
+            events?.forEach { item ->
+                var holidayIran = item?.holiday?.iran ?: listOf()
+
+                val gregorianDb = item?.run {
+                    RemoteGregorianEventsDb(
+                        0,
+                        key,
+                        calendar,
+                        month,
+                        sources,
+                        year,
+                        description?.faIR,
+                        title?.faIR,
+                        day,
+                        holidayIran
+                    )
                 }
-                val gregorianDb = RemoteGregorianEventsDb(
-                    0,
-                    item.key!!.toLong(),
-                    item.calendar,
-                    item.month,
-                    item.sources,
-                    item.year,
-                    item.description!!.faIR,
-                    item.title!!.faIR,
-                    item.day,
-                    holidayIran
-                )
-                DatabaseHandler.getInstance().putRemoteGregorianEvents(gregorianDb)
+                gregorianDb?.let { DatabaseHandler.getInstance().putRemoteGregorianEvents(it) }
             }
         }
 

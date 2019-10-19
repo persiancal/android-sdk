@@ -80,68 +80,68 @@ class LocalCalendarEvents {
 
 
         private fun storeJalaliEvents(events: List<EventsItem?>?) {
-            for (item in events!!) {
-                var holidayIran = listOf<String>()
-                if (item!!.holiday != null) {
-                    holidayIran = item.holiday!!.iran!!
+            events?.forEach { item ->
+                val holidayIran = item?.holiday?.iran ?: listOf()
+
+                val jalaliEventsDb = item?.run {
+                    LocalJalaliEventsDb(
+                        0,
+                        key,
+                        calendar,
+                        month,
+                        sources,
+                        year,
+                        description?.faIR,
+                        title?.faIR,
+                        day,
+                        holidayIran
+                    )
                 }
-                val jalaliEventsDb = LocalJalaliEventsDb(
-                    0,
-                    item.key,
-                    item.calendar,
-                    item.month,
-                    item.sources,
-                    item.year,
-                    item.description!!.faIR,
-                    item.title!!.faIR,
-                    item.day,
-                    holidayIran
-                )
-                DatabaseHandler.getInstance().putLocalJalaliEvents(jalaliEventsDb)
+                jalaliEventsDb?.let{ DatabaseHandler.getInstance().putLocalJalaliEvents(it) }
             }
         }
 
         private fun storeHijriEvents(events: List<EventsItem?>?) {
-            for (item in events!!) {
-                var holidayIran = listOf<String>()
-                if (item!!.holiday != null) {
-                    holidayIran = item.holiday!!.iran!!
+            events?.forEach { item ->
+                val holidayIran = item?.holiday?.iran ?: listOf()
+
+                val hijriEventsDb = item?.run {
+                    LocalHijriEventsDb(
+                        0,
+                        key,
+                        calendar,
+                        month,
+                        sources,
+                        year,
+                        description?.faIR,
+                        title?.faIR,
+                        day,
+                        holidayIran
+                    )
                 }
-                val hijriEventsDb = LocalHijriEventsDb(
-                    0,
-                    item.key,
-                    item.calendar,
-                    item.month,
-                    item.sources,
-                    item.year,
-                    item.description!!.faIR,
-                    item.title!!.faIR,
-                    item.day,
-                    holidayIran
-                )
-                DatabaseHandler.getInstance().putLocalHijriEvents(hijriEventsDb)
+                hijriEventsDb?.let { DatabaseHandler.getInstance().putLocalHijriEvents(it) }
             }
         }
 
         private fun storeGregorianEvents(events: List<EventsItem?>?) {
-            for (item in events!!) {
-                var holidayIran = listOf<String>()
-                if (item!!.holiday != null) {
-                    holidayIran = item.holiday!!.iran!!
+            events?.forEach { item ->
+                val holidayIran = item?.holiday?.iran ?: listOf()
+
+                val gregorianEventsDb = item?.run {
+                    LocalGregorianEventsDb(
+                        0,
+                        key,
+                        calendar,
+                        month,
+                        sources,
+                        year,
+                        description?.faIR,
+                        title?.faIR,
+                        day,
+                        holidayIran
+                    )
                 }
-                val gregorianEventsDb = LocalGregorianEventsDb(
-                    0,
-                    item.key,
-                    item.calendar,
-                    item.month,
-                    item.sources,
-                    item.year,
-                    item.description!!.faIR,
-                    item.title!!.faIR,
-                    item.day,
-                    holidayIran
-                )
-                DatabaseHandler.getInstance().putLocalGregorianEvents(gregorianEventsDb)
+                gregorianEventsDb?.let { DatabaseHandler.getInstance().putLocalGregorianEvents(it) }
             }
         }
 
